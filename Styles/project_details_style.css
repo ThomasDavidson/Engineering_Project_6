@@ -1,0 +1,39 @@
+body {font-family: Georgia, 'Times New Roman', Times, serif}
+
+p{
+    font-size: 100%;
+    line-height: 20px;
+    text-align: justify;
+    text-indent: 15px;
+}
+
+ul{
+    font-size: 100%;
+    line-height: 20px;
+    text-align: justify;
+
+}
+
+h1{
+    font-size: 160%;
+
+
+}
+
+h2{
+    font-size: 125%;
+
+
+}
+
+img{
+    height: 300px;
+}
+
+figcaption{
+    text-align: center;
+    font-size: 90%;
+    font-style: italic;
+
+}
+
