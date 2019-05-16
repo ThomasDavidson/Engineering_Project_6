@@ -25,10 +25,11 @@ h2{
 
 
 }
-
-figure{
+img{
     height: 300px;
-    text-align: center;
+}
+figure{
+        text-align: center;
 }
 
 figcaption{
@@ -38,3 +39,18 @@ figcaption{
 
 }
 
+#hcs12{
+    color: red;
+    font-style: bold;
+
+}
+
+.mkbold{
+    color: blue;
+    font-style: bold;
+}
+
+.mkunderlined{
+    color: blue;
+    text-decoration-line: underline;
+}
