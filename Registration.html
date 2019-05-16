@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Forms: Login Registration</title>
+    </head>
+    <body>
+        <h1>Login Registration</h1>
+        <form action="php/request_acc.php" method="post" id="access">
+            <p>First Name: <input type="text" name="firstname" /></p>
+            <p>Last Name: <input type="text" name="lastname" /></p>
+
+            <input type="radio" name="fac_or_student" value="faculty" />Faculty
+            <input type="radio" name="fac_or_student" value="student" />Student
+
+            <p>I ... (check all that apply)</p>
+            <input type="checkbox" name="involvement" value="none" /> Have no involvement in Project<br />
+            <input type="checkbox" name="involvement" value="instructor" /> Am an instructor<br />
+            <input type="checkbox" name="involvement" value="student" /> Am a student<br />
+            <input type="checkbox" name="involvement" value="admin" /> A college Administrator<br />
+            <input type="checkbox" name="involvement" value="external" /> An external reveiwer<br />
+            <input type="checkbox" name="involvement" value="musk" /> Am Elon Musk<br />
+
+            <p>Tell us why we should give you access to this exclusive website</p>
+            <textarea>Don't be shy ... </textarea><br />
+            <input type="submit" value="Submit Request" />
+        </form>
+    </body>
+</html>
