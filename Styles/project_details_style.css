@@ -25,10 +25,11 @@ h2{
 
 
 }
-
-figure{
+img{
     height: 300px;
-    text-align: center;
+}
+figure{
+        text-align: center;
 }
 
 figcaption{
