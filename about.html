@@ -1,18 +1,94 @@
-<!DOCTYPE html>
-<title>About</title>
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Eng Project 6 - Home</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<link rel="stylesheet" type="text/css" href="./css/style.css" title="style" />
+	<link rel="stylesheet" href="./css/project_plan_style.css"/>
+</head>
+
 <body>
-    <h1>Members</h1>
-    <ul style="font-size:2em">
-        <li>Thomas</li>
-        <li>Bobby</li>
-        <li>Damian</li>
-        <li>Stephen</li>
-    </ul>
-    <figure>
-        <img src="Images/cambridgecampus.jpg" alt="image of Conestoga College Cambridge Campus"
-            title="Cambridge Campus" width="300"  />
-        <figcaption><b>Conestoga College:</b>Cambridge Campus</figcaption> 
-    </figure>
-    <a href="Project Details.html">Project Details</a>
-    <a href="index.html">index</a>
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+          <h1><a href="index.html"><span class="logo_colour">Engineering Project 6</span></a></h1>
+          <h2>Thomas, Damien, Robert & Steve</h2>
+        </div>
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
+          <li><a href="index.html">Home</a></li>
+		  
+		 <!-- Drop down menu for Logbooks -->
+			 <div class="dropdown selected">
+				  <button class="dropbtn">Logbooks</button>
+				  <div class="dropdown-content">
+					<a href="#">Thomas</a>	
+					<a href="#">Damien</a>
+					<a href="#">Steve</a>
+					<a href="#">Robert</a>
+				  </div>
+				</div> 
+		  <!-- Drop down menu for Logbooks -->
+		  
+          <li><a href="contact.html">Contact Us</a></li>
+		  <li><a href="#">Sign Up</a></li>
+		  <li><a href="#">Login</a></li>
+        </ul>
+      </div>
+    </div>
+	
+    <div id="site_content">
+      <div class="sidebar">
+        <!-- insert your sidebar items here -->
+        <h3>Latest News</h3>
+		
+        <h4>End of Week 1</h4>
+        <h5>July 1st, 2014</h5>
+        <p>2014 sees the redesign of our website. Take a look around and let us know what you think.<br /><a href="#">Read more</a></p>
+		
+		<h4>End of Week 2</h4>
+        <h5>July 1st, 2014</h5>
+        <p>2014 sees the redesign of our website. Take a look around and let us know what you think.<br /><a href="#">Read more</a></p>
+		
+		<h4>End of Week 3</h4>
+        <h5>July 1st, 2014</h5>
+        <p>2014 sees the redesign of our website. Take a look around and let us know what you think.<br /><a href="#">Read more</a></p>
+		
+		
+        <h3>Useful Links</h3>
+        <ul>
+          <li><a href="#">Our Youtube Channel</a></li>
+          <li><a href="#">Our Github Repository</a></li>
+          <li><a href="#">link 3</a></li>
+          <li><a href="#">link 4</a></li>
+        </ul>
+      </div>
+      <div id="content">
+        <!-- insert the page content here -->
+        <h1>Members</h1>
+        <ul>
+            <li>Thomas</li>
+            <li>Bobby</li>
+            <li>Damian</li>
+            <li>Stephen</li>
+        </ul>
+        <figure>
+            <img src="Images/cambridgecampus.jpg" alt="image of Conestoga College Cambridge Campus"
+                title="Cambridge Campus" width="300"  />
+            <figcaption><b>Conestoga College:</b>Cambridge Campus</figcaption> 
+        </figure>
+    </div>
+	</div>
+    <div id="footer">
+      Copyright &copy; Eng Project
+    </div>
+  </div>
 </body>
+</html>
