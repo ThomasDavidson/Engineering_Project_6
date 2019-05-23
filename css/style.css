@@ -7,7 +7,7 @@ html
 
 body
 { font: normal .80em 'trebuchet ms', arial, sans-serif;
-  background: #F0EFE2 url(background.png) repeat;
+  background: #F0EFE2 url(../Images/background.png) repeat;
   color: #000;}
 
 p
@@ -147,7 +147,7 @@ ul#menu li a
 
 ul#menu li a:hover, ul#menu li.selected a, ul#menu a:hover
 { color: #FFF;
-  background: transparent url(transparent_light.png) repeat;}
+  background: transparent url(../Images/transparent_light.png) repeat;}
 
 #site_content
 { width: 854px;
@@ -173,7 +173,7 @@ ul#menu li a:hover, ul#menu li.selected a, ul#menu a:hover
 .sidebar li a, .sidebar li a:hover
 { padding: 0 0 0 40px;
   display: block;
-  background: transparent url(link.png) no-repeat left center;} 
+  background: transparent url(../Images/link.png) no-repeat left center;} 
 
 .sidebar li a.selected
 { color: #7E2451;
@@ -190,7 +190,7 @@ ul#menu li a:hover, ul#menu li.selected a, ul#menu a:hover
 
 #content ul li
 { list-style-type: none;
-  background: url(bullet.png) no-repeat;
+  background: url(../Images/bullet.png) no-repeat;
   margin: 0 0 6px 0; 
   padding: 0 0 4px 25px;
   line-height: 1.5em;}
@@ -309,7 +309,7 @@ table tr td
   color: white;
   padding: 16px;
   font-size: 16px;
-   background: transparent url(transparent_light.png) repeat;
+   background: transparent url(../Images/transparent_light.png) repeat;
   border: none;
 }
 
