@@ -1,0 +1,10 @@
+table{
+        empty-cells: hide;
+        color: white;
+        border-collapse: collapse;
+        width:100%;
+        border-spacing:0;
+        }
+tr:hover{
+    background-color: aquamarine;
+}
