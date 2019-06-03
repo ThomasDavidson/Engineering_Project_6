@@ -2,11 +2,13 @@
 <html>
 
 <head>
-  <title>Eng Project 6 - Stephen Logbook</title>
+  <title>Eng Project 6 - Damian's Logbook</title>
   <meta name="description" content="website description" />
   <meta name="keywords" content="website keywords, website keywords" />
   <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-  <link rel="stylesheet" type="text/css" href="css/style.css" title="style" />
+  <meta http-equiv="pragma" content="no-cache" /> <!-- want browser to reload this page every time -->
+  <meta name="robots" content="noindex nofollow" />  <!-- do not want page or any of its links to be indexed -->
+  <link rel="stylesheet" type="text/css" href="./css/style.css" title="style" />
 </head>
 
 <body>
@@ -28,19 +30,21 @@
 			  <div class="dropdown">
 				   <button class="dropbtn">Logbooks</button>
 				  <div class="dropdown-content">
-					<a href="#">Thomas</a>
-					<a href="#">Damien</a>
-					<a href="#">Steve</a>
-					<a href="#">Robert</a>
+					<a href="./ThomasLogBook.html">Thomas</a>
+					<a href="./DamianLogBook.html">Damien</a>
+					<a href="./Stephen - Logbook.html">Steve</a>
+					<a href="./RobertLogBook.html">Robert</a>
 				  </div>
 				</div> 
 		  <!-- Drop down menu for Logbooks -->
 		  
           <li><a href="contact.html">Contact Us</a></li>
-		  <li><a href="#">Sign Up</a></li>
-		  <li><a href="#">Login</a></li>
+		  <li><a href="./Registration.html">Sign Up</a></li>
+      <li><a href="./loginRequest.html">Login</a></li>
+      <li><a href="./about.html">About</a></li>
         </ul>
       </div>
+
     </div>
 	
     <div id="site_content">
@@ -71,42 +75,32 @@
       </div>
       <div id="content">
         <!-- insert the page content here -->
-        <h1>Sign Up Page</h1>
+        <h1>Damian's Log Book</h1>
+        <figure>
+            <img src="./Images/damian.jpg" alt="image of Damian"
+                title="Damian" width="200"  />
+            <figcaption><b>Damian Scarpone:</b>Specialist in botchery.
+            Damians key role in the project is to be a motivational leader
+            and rule with an iron fist!
+            </figcaption>
+        </figure>
+        <h2>Week 1</h2>
+        <ul>
+            <li>Test Plan</li>
+            <li>Website</li>
+            <ul>
+                <li>Log Book</li>
+                <li>About page</li>
+                <li>Test Plan</li>
+            </ul>
+        </ul>
+        <h3>Week 2</h3>
+        <ul>
+            <li> Genearate a schematic diagram for the floor nodes and the elevator car controller</li>
+            <li> Build at least one floor node and program it to call elevator to one of the floors at the press of a button and to display the floor number that the elevator is curently on</li>
+            <li> Software Assignment #1 Question #7,10</li>
+        </ul>
 		
-		<form action="php/req_access.php" method="post">
-			<fieldset>
-				<legend>Contact Details</legend>
-				<div>
-					<label for="fname" class="text_label" >First Name:</label>
-					<input id="fname" class="text_input" type="text" name="firstname"  /> 
-				</div>
-				<div>
-					<label for="lname" class="text_label">Last Name:</label>  
-					<input id="lname" class="text_input" type="text" name="lastname"  /> 
-				</div>
-				<div>
-					<label for="email" class="text_label">Email:</label>     
-					<input id="email" class="text_input" type="email" name="email" /> 
-				</div>
-				<div>
-					<label for="website" class="text_label">Website:</label>    
-					<input id="website" class="text_input" type="url" name="url" /> 
-				</div>
-				<div>
-					<label for="bdate" class="text_label">Birth date:</label> 
-					<input id="bdate" class="text_input" type="date" name="birthday" /> 
-				</div>
-				
-				<div>
-					<span class="text_label">Request type:</span>
-					<input id="faculty" type="radio" name="fac_or_student" value="faculty" /> 
-					<label for="faculty">Faculty</label>
-					<input id="student" type="radio" name="fac_or_student" value="student" /> 
-					<label for="student">Student</label><br />
-				</div>
-			</fieldset>
-			
-			
     </div>
 	</div>
     <div id="footer">
