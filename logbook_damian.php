@@ -55,7 +55,11 @@
 							<br>
 							
 							<figure>
-							<img src="img/damian.jpg" alt="image of Damian"	title="Damian" width="200" />
+							<img src="Images/damian.jpg" alt="image of Damian"	title="Damian" width="200" />
+									<figcaption><b>Damian Scarpone:</b>Specialist in botchery.
+								Damians key role in the project is to be a motivational leader
+								and rule with an iron fist!
+								</figcaption>
 							</figure>
 							
 							<br>
@@ -71,14 +75,22 @@
 								</ul>
 							</ul>
 							
-							<h2>Week 2</h2>
+							<h2>Week 2-3</h2>
 							<ul>
 								<li> Genearate a schematic diagram for the floor nodes and the elevator car controller</li>
 								<li> Build at least one floor node and program it to call elevator to one of the floors at the press of a button and to display the floor number that the elevator is curently on</li>
 								<li> Software Assignment #1 Question #7,10</li>
 							</ul>
+
+							<h2>Week 4</h2>
+							<ul>
+								<li> Helped wire the floor nodes</li>
+								<li> lab #1 for datacom</li>
+								<li> Software Assignment #1 Question #10-13</li>
+							</ul>
 					
 						</div>
+
 						
 						<!-- Second Section, This Column Width Smaller --> 
 						<div class="col-md-2" style='background-color:white'>
