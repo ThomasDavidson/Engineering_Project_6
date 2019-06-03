@@ -59,7 +59,7 @@
 							
 							<h2>Members</h2>
 						
-							<h3>Damien </h3>
+							<h3>Damian </h3>
 							<a href = "https://www.linkedin.com/in/damian-scarpone-496b57130/" target="_blank" class="fa fa-linkedin-square"></a>
 							
 							<br>
