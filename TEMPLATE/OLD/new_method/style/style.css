@@ -1,12 +1,5 @@
-/* Fix Image Orientation */
-img {
-    image-orientation: from-image;
-}
 
-/* Underline h2  */
-h2 {
-  text-decoration: underline;
-}
+
 
 /* Set the body background black */
 body {

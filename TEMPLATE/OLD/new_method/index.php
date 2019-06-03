@@ -6,9 +6,6 @@
 	<!-- Link Bootstrap -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	
-	<!-- For Social Media Icons -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">  
-	
 	<!-- Link Custom CSS -->
 	<link rel="stylesheet" type="text/css" href="style/style.css">
 	
@@ -57,40 +54,7 @@
 							<h1 class="text-muted">Welcome to the Elevator Project Homepage</h1>
 							<br>
 							
-							<h2>Members</h2>
-						
-							<h3>Damien </h3>
-							<a href = "https://www.linkedin.com/in/damian-scarpone-496b57130/" target="_blank" class="fa fa-linkedin-square"></a>
-							
-							<br>
-							<br>
-							<h3> Steve </h3>
-							<a href = "https://www.linkedin.com/in/stephen-han-692a2445/" target="_blank" class="fa fa-linkedin-square"></a>
-
-							<br>
-							<br>
-							
-							<h3> Robert </h3>
-							<a href = "https://www.linkedin.com/in/rboettcher/" target="_blank" class="fa fa-linkedin-square"></a>
-
-							
-							<br>
-							<br>
-							
-							<h3> Thomas </h3>
-							<a href = "https://www.linkedin.com/in/thomas-davidson-661ab7115/" target="_blank" class="fa fa-linkedin-square"></a>
-
-							
-							<br>
-							<br>
-							
-							<h2>Calendar</h2>
-							<iframe src="https://calendar.google.com/calendar/embed?src=hanpc14%40gmail.com&ctz=America%2FToronto" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-							
-							<br>
-							<br>
-							
-							<h2>Gantt Chart</h2>
+							<h3>Gantt Chart</h3>
 
 					<!-- Have a Table that wraps --> 
 					
@@ -341,13 +305,12 @@
 							<div class="row">
 								<div class="col-md-12" style='background-color: white'>
 								<h1>Useful Links</h1>
-								
-						<!-- Load links.php -->
-						
-									<?php 
-									include('links.php');
-									?>
-						
+								<ul>
+								  <li><a href="#">Our Youtube Channel</a></li>
+								  <li><a href="#">Our Github Repository</a></li>
+								  <li><a href="#">link 3</a></li>
+								  <li><a href="#">link 4</a></li>
+								</ul>
 								</div>
 							</div>
 						</div>
@@ -357,7 +320,7 @@
 					<div class="row">
 						<div class="col-md-12">
 							<div class="container-bg">
-							<p class="text-light text-center">&copy; Copyright 2014-<script>document.write(new Date().getFullYear())</script></p>
+							<p class="text-light text-center">© 2018 Copyright </p>
 							</div>
 						</div>			
 						</div>
