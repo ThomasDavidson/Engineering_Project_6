@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html>
+    <!-- Load the Navigation Bar wit hPHP include function --> 
+    <?php 
+					include('menu.php');
+					?>
     <head>
         <title>Forms: Login Registration</title>
         <meta name="description" content="This is the login registration page for our project" />
 		<meta name="robots" content="noindex nofollow" />  <!-- do not want page or any of its links to be indexed -->
 		<meta http-equiv="author" content="Damian Scarpone" />
         <meta http-equiv="pragma" content="no-cache" /> <!-- want browser to reload this page every time -->
+
         <link href="Styles/registration_style.css" type="text/css" rel="stylesheet" />
     </head>
     <body>

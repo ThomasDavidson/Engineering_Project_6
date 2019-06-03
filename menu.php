@@ -11,7 +11,7 @@
 	</li>
 	
 	<li class="nav-item">
-		<a class="nav-link disabled" href="#" target="_blank">Register</a>
+		<a class="nav-link" href="Registration.php" target="_blank">Register</a>
 	</li>
 	
 
