@@ -11,7 +11,7 @@
 		<meta http-equiv="author" content="Damian Scarpone" />
         <meta http-equiv="pragma" content="no-cache" /> <!-- want browser to reload this page every time -->
 
-        <link href="Styles/registration_style.css" type="text/css" rel="stylesheet" />
+        <link href="css/registration_style.css" type="text/css" rel="stylesheet" />
     </head>
     <body>
         <h1>Login Registration</h1>
