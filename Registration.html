@@ -5,11 +5,11 @@
   <title>Eng Project 6 - Home</title>
   <meta name="description" content="website description" />
   <meta name="keywords" content="website keywords, website keywords" />
-	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
   <meta http-equiv="pragma" content="no-cache" /> <!-- want browser to reload this page every time -->
   <meta name="robots" content="noindex nofollow" />  <!-- do not want page or any of its links to be indexed -->
+  <meta http-equiv="author" content="Damian Scarpone" />
 	<link rel="stylesheet" type="text/css" href="./css/style.css" title="style" />
-	<link rel="stylesheet" href="./css/project_plan_style.css"/>
 </head>
 
 <body>
@@ -75,173 +75,44 @@
       </div>
       <div id="content">
         <!-- insert the page content here -->
-        <h1>Welcome to the Elevator Project Homepage</h1>
-        <p> Info about the elevator code</p>
-		
-		<h1>Gnatt Chart</h1>
+        <h1>Login Registration</h1>
+        <form action="php/request_acc.php" method="post" id="access">
+            <fieldset>
+                <legend>Contact Details</legend>
+                <p><label>First Name: <input type="text" name="firstname" /></label></p>
+                <p><label>Last Name: <input type="text" name="lastname" /></label></p>
+                <p><label>Email: <input type="email" name="email" /></label></p>
+                <p><label>Website: <input type="url" name="url" /></label></p>
+                <p><label>Date of Birth: <input type="date" name="birthday" /></label></p>
 
-		<table>
-		  <tr>
-			<th></th>
-			<th>WK1<br></th>
-			<th>WK2</th>
-			<th>WK3</th>
-			<th>WK4</th>
-			<th>WK5</th>
-			<th>WK6</th>
-			<th>WK7</th>
-			<th>WK8</th>
-			<th>WK9</th>
-			<th>WK10</th>
-			<th>WK11</th>
-			<th>WK12</th>
-			<th>WK13</th>
-			<th>WK14</th>
-		  </tr>
-		  <tr>
-			<td>TASK1</td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-		  </tr>
-		  <tr>
-			<td>TASK2</td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-		  </tr>
-		  <tr>
-			<td>TASK3</td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-		  </tr>
-		  <tr>
-			<td>TASK4</td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-		  </tr>
-		  <tr>
-			<td>TASK5</td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-		  </tr>
-		  <tr>
-			<td>TASK6</td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-		  </tr>
-		  <tr>
-			<td>TASK7</td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-		  </tr>
-		  
-		    <tr>
-			<td>TASK8</td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-		  </tr>
-		  
-		</table>
-		
+                <input type="radio" name="fac_or_student" value="faculty" />Faculty
+                <input type="radio" name="fac_or_student" value="student" />Student
+            </fieldset>
+
+            <p>I ... (check all that apply)</p>
+            <input type="checkbox" name="involvement" value="none" /> Have no involvement in Project<br />
+            <input type="checkbox" name="involvement" value="instructor" /> Am an instructor<br />
+            <input type="checkbox" name="involvement" value="student" /> Am a student<br />
+            <input type="checkbox" name="involvement" value="admin" /> Am a college Administrator<br />
+            <input type="checkbox" name="involvement" value="external" /> Am an external reveiwer<br />
+            <input type="checkbox" name="involvement" value="musk" /> Am Elon Musk<br />
+
+            <p>can you do 10 pull-ups?
+            <select name="pull-ups">
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                    <option value="five">5</option>
+                    <option value="no_answer" selected></option>
+            </select>
+            </p>
+            <p>Tell us why we should give you access to this exclusive website</p>
+            <textarea>Don't be shy ... </textarea><br />
+            <input type="submit" value="Submit Request" />
+        </form>
     </div>
 	</div>
     <div id="footer">
-      Copyright &copy; Eng Project
+        Copyright &copy 2019 Damian Scarpone
     </div>
   </div>
 </body>

@@ -6,6 +6,8 @@
   <meta name="description" content="website description" />
   <meta name="keywords" content="website keywords, website keywords" />
   <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <meta http-equiv="pragma" content="no-cache" /> <!-- want browser to reload this page every time -->
+  <meta name="robots" content="noindex nofollow" />  <!-- do not want page or any of its links to be indexed -->
 	<link rel="stylesheet" type="text/css" href="./css/style.css" title="style" />
 	<link rel="stylesheet" href="./css/project_plan_style.css"/>
 </head>
@@ -29,17 +31,18 @@
 			 <div class="dropdown selected">
 				  <button class="dropbtn">Logbooks</button>
 				  <div class="dropdown-content">
-					<a href="#">Thomas</a>	
-					<a href="#">Damien</a>
-					<a href="#">Steve</a>
-					<a href="#">Robert</a>
+            <a href="./ThomasLogBook.html">Thomas</a>
+            <a href="./DamianLogBook.html">Damien</a>
+            <a href="./Stephen - Logbook.html">Steve</a>
+            <a href="./RobertLogBook.html">Robert</a>
 				  </div>
 				</div> 
 		  <!-- Drop down menu for Logbooks -->
 		  
           <li><a href="contact.html">Contact Us</a></li>
-		  <li><a href="#">Sign Up</a></li>
-		  <li><a href="#">Login</a></li>
+		  <li><a href="./Registration.html">Sign Up</a></li>
+      <li><a href="./loginRequest.html">Login</a></li>
+      <li><a href="./about.html">About</a></li>
         </ul>
       </div>
     </div>
@@ -72,18 +75,33 @@
       </div>
       <div id="content">
         <!-- insert the page content here -->
-        <h1>Members</h1>
-        <ul>
-            <li>Thomas</li>
-            <li>Bobby</li>
-            <li>Damian</li>
-            <li>Stephen</li>
-        </ul>
         <figure>
-            <img src="Images/cambridgecampus.jpg" alt="image of Conestoga College Cambridge Campus"
-                title="Cambridge Campus" width="300"  />
-            <figcaption><b>Conestoga College:</b>Cambridge Campus</figcaption> 
-        </figure>
+          <img src="Images/logo.jpg" alt="Team Logo"
+              title="Haron" width="200"  />
+          <figcaption><b>Team logo</b></figcaption>  
+      </figure>
+      <h1>Members</h1>
+      <ul style="font-size:2em">
+          <li>Thomas</li>
+          <li>Bobby</li>
+          <li>Damian</li>
+          <li>Stephen</li>
+      </ul>
+      
+      <h2>Our School Campus</h2>
+          <p>Below is a map to our school campus and a picture of it</p>
+          <figure>
+          <img src="Images/cambridgecampus.jpg" alt="image of Conestoga College Cambridge Campus"
+              title="Cambridge Campus" width="300"  />
+          <figcaption><b>Conestoga College:</b>Cambridge Campus</figcaption> 
+          </figure>
+      <iframe 
+        width="450" 
+        height="300" 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2899.3449997019893!2d-80.4081616845108!3d43.39071797913114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b9018e9e89adf%3A0x2043c24369ede07e!2sConestoga+College!5e0!3m2!1sen!2sca!4v1485292835819" 
+        allowfullscreen
+        seamless>
+      </iframe>
     </div>
 	</div>
     <div id="footer">
