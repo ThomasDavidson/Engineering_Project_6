@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /* Fit Wiring Information Table */
 .table-wiring {
     width: 5px;
@@ -23,8 +22,6 @@ background-color: #6666ff;
 }
 
 /* Bootstrap Modifications */
-=======
->>>>>>> 0d79e2468913c6a0ab180b0558c2b701eecd0ff1
 /* Fix Image Orientation */
 img {
     image-orientation: from-image;
@@ -33,7 +30,6 @@ img {
 /* Underline h2  */
 h2 {
   text-decoration: underline;
-<<<<<<< HEAD
 }
 
 /* Set the body background black */
@@ -72,45 +68,3 @@ color: white !important;
 {
 background-color: red !important;
 }
-
-
-=======
-}
-
-/* Set the body background black */
-body {
-  background-color: black !important;
-}
-
-/* Set the container background black */
-.container-bg {
-  background-color: black !important; 
-}
-
-/* Set the navigation link colors to white */
-.nav-link {
-color: white !important;
-}
-
-.nav-link:hover {
-color: brown !important;
-}
-
-/* Dropdown menu background color*/
-.navbar-nav > li > .dropdown-menu 
-{ 
-background-color: black !important;
-}
-
-/* Dropdown menu font color */ 
-.navbar-nav > li > .dropdown-menu a
-{
-color: white !important;  
-}
-
-/* Dropdown menu highlight color */ 
-.dropdown .dropdown-menu .dropdown-item:active, .dropdown .dropdown-menu .dropdown-item:hover 
-{
-background-color: red !important;
-}
->>>>>>> 0d79e2468913c6a0ab180b0558c2b701eecd0ff1
