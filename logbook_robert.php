@@ -1,114 +1,144 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
-</head>
-<title>Logbook | Robert</title>
+  <head>
+    <title>Logbook | Robert</title>
 
-<!-- Link Bootstrap -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-<!-- Link Custom CSS -->
-<link rel="stylesheet" type="text/css" href = "css/style.css">
-
-<!-- Link JS -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
-
-</head>
-
-<body>
-  <div id="main">
-    <div id="header">
-      <div id="logo">
-        <div id="logo_text">
-          <!-- class="logo_colour", allows you to change the colour of the text -->
-          <h1><a href="index.php"><span class="logo_colour">Engineering Project 6</span></a></h1>
-          <h2>Thomas, Damien, Robert & Steve</h2>
-        </div>
-      </div>
-      <div id="menubar">
-        <ul id="menu">
-          <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
-          <li><a href="index.php">Home</a></li>
-		  
-		 <!-- Drop down menu for Logbooks -->
-			  <div class="dropdown">
-				   <button class="dropbtn">Logbooks</button>
-				  <div class="dropdown-content">
-					<a href="./ThomasLogBook.html">Thomas</a>
-					<a href="./DamianLogBook.html">Damien</a>
-					<a href="./Stephen - Logbook.html">Steve</a>
-					<a href="./RobertLogBook.html">Robert</a>
-				  </div>
-				</div> 
-		  <!-- Drop down menu for Logbooks -->
-		  
-          <li><a href="contact.html">Contact Us</a></li>
-		  <li><a href="./Registration.html">Sign Up</a></li>
-      <li><a href="./loginRequest.html">Login</a></li>
-      <li><a href="./about.html">About</a></li>
-        </ul>
-      </div>
-    </div>
+	<!-- Link Bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	
-    <div id="site_content">
-      <div class="sidebar">
-        <!-- insert your sidebar items here -->
-        <h3>Latest News</h3>
-		
-        <h4>End of Week 1</h4>
-        <h5>July 1st, 2014</h5>
-        <p>2014 sees the redesign of our website. Take a look around and let us know what you think.<br /><a href="#">Read more</a></p>
-		
-		<h4>End of Week 2</h4>
-        <h5>July 1st, 2014</h5>
-        <p>2014 sees the redesign of our website. Take a look around and let us know what you think.<br /><a href="#">Read more</a></p>
-		
-		<h4>End of Week 3</h4>
-        <h5>July 1st, 2014</h5>
-        <p>2014 sees the redesign of our website. Take a look around and let us know what you think.<br /><a href="#">Read more</a></p>
-		
-		
-        <h3>Useful Links</h3>
-        <ul>
-          <li><a href="#">Our Youtube Channel</a></li>
-          <li><a href="#">Our Github Repository</a></li>
-          <li><a href="#">link 3</a></li>
-          <li><a href="#">link 4</a></li>
-        </ul>
-      </div>
-      <div id="content">
-        <!-- insert the page content here -->
-        <h1> <strong> Log Book Entries</strong> </h1>
-        <hr />
-        <h2>Week Two - 5-13-2019 </h2>
+	<!-- Link Custom CSS -->
+	<link rel="stylesheet" type="text/css" href = "css/style.css">
+	
+	<!-- Link JS -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-        <ul>
-            <li>Git repository with Team</li>
-            <li>Establish remote connection with the Raspberry Pi</li>
-            <li>Plan establishment of group Git repository</li> 
-        </ul>
+  </head>
 
-        <h2>Week Three - 5-20-2019 </h2>
+  <body>
+	
+	<!-- Container has margins but container-fluid does not -->
+	<div class="container-fluid">
+		<div class="container-bg">
 
-        <ul>
-            <li>Worked on Can bus</li>
-            <li>Cleaned up .css stuff</li>
-            <li>created test plan</li> 
-        </ul>
+		<!-- Top of the Page --> 
+			<div class="row" >
+		<!-- Container-bg to set background color --> 
+				<div class="col-md-12">
+					<div class="page-header">
+						<br>
+						<h1 class="text-light"><img src="img/CC_logo.jpg" alt="Conestoga College Logo" height="60" wide="60"> Engineering Project 6</h1>
+						<h5 class="text-light">By: Thomas, Damien, Robert & Steve</h5>
+					</div>
+					</div>
+			</div>
+			<br>
+			
+			<div class="row">
+				<div class="col-md-12">	
 
-        <h3>Week Four 6-03-2019</h3>
-        <ul>
-          <li>Cleaned up file strucutres</li>
-          <li>Automated raspberry pi repository</li>
-       </ul>
-		
-    </div>
+			<!-- Load the Navigation Bar wit hPHP include function --> 
+					<?php 
+					include('menu.php');
+					?>
+						
+				</div>
+			</div> 
+
+					<div class="row">
+					
+					<!-- Main Section --> 
+						<div class="col-md-10" style='background-color: white'>	
+						
+							<h1 class="text-muted">Robert's Logbook</h1>
+							<br>
+							
+							<figure>
+							<img src="images/Robert.jpg" alt="image of Robert"	title="Robert" width="200px" />
+							</figure>
+							
+							<br>
+							
+							<h2>Week 1</h2>
+							<ul>
+								<li>Test Plan</li>
+								<li>Website html</li>
+							</ul>
+							
+							<h2>Week 2</h2>
+							<ul>
+								<li> Worked on elivator programming</li>
+								<li> setup Git </li>
+							</ul>
+					
+							<h2>Week 3</h2>
+							<ul>
+								<li> worked on setting up the pi</li>
+								<li> Build at least one floor node and program it to call elevator to one of the floors at the press of a button and to display the floor number that the elevator is curently on</li>
+								<li> data com assignment 2 </li>
+							</ul>
+							
+							<h2>Week 4</h2>
+							<ul>
+								<li> Did Data Lab </li>
+								<li> Successfully wired the elevator floors and master floor node</li>
+								<li> Assisted with programming the elevator </li>
+								<li> established coding standards  </li>
+
+
+							</ul>
+							
+							<h2>Week 5</h2>
+							<ul>
+								<li> In Progress</li>
+							</ul>
+							
+						</div>
+						
+						<!-- Second Section, This Column Width Smaller --> 
+						<div class="col-md-2" style='background-color:white'>
+							<div class="row">
+								<div class="col-md-12">
+							
+						<!-- Load news.php -->
+						
+									<?php 
+									include('news.php');
+									?>
+						
+									</div>
+								</div>
+							
+							<!-- Scond Section, Part Two ---> 
+							<div class="row">
+								<div class="col-md-12" style='background-color: Pink'>
+								<h1>Useful Links</h1>
+								<ul>
+								  <li><a href="#">Our Youtube Channel</a></li>
+								  <li><a href="#">Our Github Repository</a></li>
+								  <li><a href="#">link 3</a></li>
+								  <li><a href="#">link 4</a></li>
+								</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+				<!-- Footer Section --> 
+					<div class="row">
+						<div class="col-md-12">
+							<div class="container-bg">
+							<!-- Footer Code with start year -->
+							<p class="text-light text-center">&copy; Copyright 2014-<script>document.write(new Date().getFullYear())</script></p>
+							</div>
+						</div>			
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
-    <div id="footer">
-      Copyright &copy; Eng Project
-    </div>
-  </div>
-</body>
+	</div>
+  </body>
 </html>
