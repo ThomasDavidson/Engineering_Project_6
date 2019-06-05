@@ -49,7 +49,7 @@
 					<div class="row">
 					
 					<!-- Main Section --> 
-						<div class="col-md-10" style='background-color: white'>	
+						<div class="col-md-10" style='background-color: purple'>	
 						
 							<h1 class="text-muted">Robert's Logbook</h1>
 							<br>
@@ -112,7 +112,7 @@
 							
 							<!-- Scond Section, Part Two ---> 
 							<div class="row">
-								<div class="col-md-12" style='background-color: Pink'>
+								<div class="col-md-12" style='background-color: 0x55'>
 								<h1>Useful Links</h1>
 								<ul>
 								  <li><a href="#">Our Youtube Channel</a></li>
