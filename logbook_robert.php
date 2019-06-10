@@ -28,8 +28,9 @@
 				<div class="col-md-12">
 					<div class="page-header">
 						<br>
-						<h1 class="text-light"><img src="img/CC_logo.jpg" alt="Conestoga College Logo" height="60" wide="60"> Engineering Project 6</h1>
-						<h5 class="text-light">By: Thomas, Damien, Robert & Steve</h5>
+						<a href ="https://www.conestogac.on.ca/" >
+						<h1 class="text-light"><img src="Images/CC_logo.jpg" alt="Conestoga College Logo" height="60" wide="60"> Engineering Project 6</h1>
+							</a>
 					</div>
 					</div>
 			</div>
@@ -49,13 +50,13 @@
 					<div class="row">
 					
 					<!-- Main Section --> 
-						<div class="col-md-10" style='background-color: purple'>	
+						<div class="col-md-10" style='background-color: white'>	
 						
 							<h1 class="text-muted">Robert's Logbook</h1>
 							<br>
 							
 							<figure>
-							<img src="images/Robert.jpg" alt="image of Robert"	title="Robert" width="200px" />
+							<img src="Images/Robert.jpg" alt="image of Robert"	title="Robert" width="200px" />
 							</figure>
 							
 							<br>
@@ -93,7 +94,8 @@
 							<ul>
 								<li> In Progress</li>
 							</ul>
-							
+							<a class="top-link" href="logbook_robert.php">Top of Page</a>
+						
 						</div>
 						
 						<!-- Second Section, This Column Width Smaller --> 
@@ -130,7 +132,7 @@
 						<div class="col-md-12">
 							<div class="container-bg">
 							<!-- Footer Code with start year -->
-							<p class="text-light text-center">&copy; Copyright 2014-<script>document.write(new Date().getFullYear())</script></p>
+							<p class="text-light text-center">&copy; Copyright Robert Boettcher 2014-<script>document.write(new Date().getFullYear())</script></p>
 							</div>
 						</div>			
 						</div>
