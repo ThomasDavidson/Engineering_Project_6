@@ -88,7 +88,14 @@
 								<li> lab #1 for datacom</li>
 								<li> Software Assignment #1 Question #10-13</li>
 							</ul>
-					
+
+							<h2>Week 5</h2>
+							<ul>
+								<li> Worked on Completing the Front-End Development of our website</li>
+							</ul>
+							<li class="nav-item">
+								<a class="nav-link" href="logbook_damian.php" target="_blank">Top of Page</a>
+							</li>
 						</div>
 
 						
