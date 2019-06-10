@@ -62,14 +62,18 @@
         <form action="php/request_acc.php" method="post" id="access">
             <fieldset>
                 <legend>Login</legend>
-                <p><label>Username: <input type="text" name="username" /></label></p>
-                <p><label>Password: <input type="text" name="password" /></label></p>
+                <p><label>Username: <input type="text" name="username" id='username'/></label></p>
+                <p><label>Password: <input type="text" name="password" id='password'/></label></p>
             </fieldset>
 			<input class="submit"type="submit" value="Login" />
 			<form action="Registration.php">
 			<input class="submit"type="submit" value="Request Access" />
 			</form>
-        </form>
+			<p> Error Messages:</p>
+			<p id="feedbacku"></p>
+			<p id="feedbackp"></p>
+		</form>
+		<script src="LoginPage.js"></script>
         </div>
         
 
