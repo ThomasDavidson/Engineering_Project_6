@@ -7,7 +7,7 @@
 	</li>
 
 	<li class="nav-item">
-		<a class="nav-link disabled" href="form.php" target="_blank">Sign In</a>
+		<a class="nav-link" href="form.php" target="_blank">Sign In</a>
 	</li>
 	
 	<li class="nav-item">
