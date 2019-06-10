@@ -13,6 +13,10 @@
 	<li class="nav-item">
 		<a class="nav-link" href="Registration.php" target="_blank">Register</a>
 	</li>
+
+	<li class="nav-item">
+		<a class="nav-link" href="Project_details.php" target="_blank">Project Details</a>
+	</li>
 	
 
 	<!-- Drop Down Menu -->

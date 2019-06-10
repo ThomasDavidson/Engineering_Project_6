@@ -93,9 +93,7 @@
 							<ul>
 								<li> Worked on Completing the Front-End Development of our website</li>
 							</ul>
-							<li class="nav-item">
-								<a class="nav-link" href="logbook_damian.php" target="_blank">Top of Page</a>
-							</li>
+							<a class="top-link" href="logbook_damian.php">Top of Page</a>
 						</div>
 
 						
