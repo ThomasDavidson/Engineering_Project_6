@@ -60,17 +60,29 @@
 	<div class="col-md-10" style='background-color: white'>	
 
         <h1 class="text-muted">Login Registration</h1>
-        <form action="php/request_acc.php" method="post" id="access">
+        <form id="reqaccess"action="php/request_acc.php" method="post" id="access">
             <fieldset>
                 <legend>Contact Details</legend>
-                <p><label>First Name: <input type="text" name="firstname" /></label></p>
-                <p><label>Last Name: <input type="text" name="lastname" /></label></p>
-                <p><label>Email:<br><input type="email" name="email" /></label></p>
-                <p><label>Website: <input type="url" name="url" /></label></p>
-                <p><label>Date of Birth: <input type="date" name="birthday" /></label></p>
+                <div>
+                <p><label>First Name: <input id="fname"type="text" name="firstname" /></label></p>
+                <a id="firstnameFeedback"></a>
+                </div>
+                <div>
+                <p><label>Last Name: <input id="lname"type="text" name="lastname" /></label></p>
+                <a id="lastnameFeedback"></a>
+                </div>
+                <div>
+                <p><label>Email:<br><input id="email"type="email" name="email" /></label></p>
+                <a id="emailFeedback"></a>
+                </div>
+                <p><label>Website: <input id="site"type="url" name="url" /></label></p>
+                <div>
+                <p><label>Date of Birth: <input id="birthdate" type="date" name="birthday" /></label></p>
+                <a id="birthdateFeedback"></a>
+                </div>
 
-                <input type="radio" name="fac_or_student" value="faculty" />Faculty
-                <input type="radio" name="fac_or_student" value="student" />Student
+                <input type="radio" id="faculty" name="fac_or_student" value="faculty" />Faculty
+                <input type="radio" id="student" name="fac_or_student" value="student" />Student
             </fieldset>
 
             <p>I ... (check all that apply)</p>
@@ -90,7 +102,10 @@
             </select>
             </p>
             <p>Tell us why we should give you access to this exclusive website</p>
-            <textarea>Don't be shy ... </textarea><br />
+            <textarea id="message">Don't be shy ... </textarea><br />
+            <p id="charactersleft"></p>
+            <p id="maxchar"></p>
+            <script src="RegistrationPage.js"></script>
             <input class="submit"type="submit" value="Submit Request" />
         </form>
         </div>
