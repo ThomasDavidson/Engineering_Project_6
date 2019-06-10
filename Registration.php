@@ -129,7 +129,8 @@
                     <div class="row">
 						<div class="col-md-12">
 							<div class="container-bg">
-                             <p class="text-light text-center">Copyright &copy 2019 Damian Scarpone</p>
+                            <footer class="text-light text-center" id='foot'></footer>
+							<script src="DateObjectModel.js"></script>
                             </div>
                         </div>
                      </div>
