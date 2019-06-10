@@ -10,7 +10,7 @@
 	
 	<!-- Link Custom CSS -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <!--<link rel="stylesheet" type="text/css" href="css/registration_style.css">-->
+    <link rel="stylesheet" type="text/css" href="css/Registration_style.css">
 	
 	<!-- Link JS -->
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -65,7 +65,7 @@
                 <legend>Contact Details</legend>
                 <p><label>First Name: <input type="text" name="firstname" /></label></p>
                 <p><label>Last Name: <input type="text" name="lastname" /></label></p>
-                <p><label>Email: <input type="email" name="email" /></label></p>
+                <p><label>Email:<br><input type="email" name="email" /></label></p>
                 <p><label>Website: <input type="url" name="url" /></label></p>
                 <p><label>Date of Birth: <input type="date" name="birthday" /></label></p>
 
@@ -91,7 +91,7 @@
             </p>
             <p>Tell us why we should give you access to this exclusive website</p>
             <textarea>Don't be shy ... </textarea><br />
-            <input type="submit" value="Submit Request" />
+            <input class="submit"type="submit" value="Submit Request" />
         </form>
         </div>
         
