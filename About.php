@@ -48,3 +48,24 @@
 						
 				</div>
 			</div> 
+            
+
+        <div class="row">
+
+        <!-- Main Section --> 
+            <div class="col-md-10" style='background-color: white'>	
+            <h1>About us</h1>
+            <img src="images/team photo.jpg" alt= "team photo">
+            <ul>
+                <li>Our group consists of 4 members: Robert, Damian, Stephan and Thomas. Our mascot is Haron and our website features him.</li>
+            
+            </ul>
+        <!-- Footer Section --> 
+					<div class="row">
+					<div class="col-md-12">
+					<div class="container-bg">
+			<!-- Footer Code with start year -->
+						<p class="text-light text-center">&copy; Copyright 2014-<script>document.write(new Date().getFullYear())</script></p>
+
+        <body>
+
