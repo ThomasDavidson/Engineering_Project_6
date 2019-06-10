@@ -56,6 +56,11 @@
 						
 							<h1 class="text-muted">Welcome to the Elevator Project Homepage</h1>
 							<br>
+
+							<figure>
+							<img src="Images/logo.jpg" alt="Team Logo(Larry)"	title="Larry" width="200" />
+									<figcaption><b>Team Larry</b></figcaption>
+							</figure>
 							
 							<h2>Members</h2>
 						
