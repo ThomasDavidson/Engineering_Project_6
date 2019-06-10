@@ -10,15 +10,14 @@
 	
 	<!-- Link Custom CSS -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/Registration_style.css">
 	
 	<!-- Link JS -->
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     
-        <title>Forms: Login Registration</title>
-        <meta name="description" content="This is the login registration page for our project" />
+        <title>Forms: Sign in</title>
+        <meta name="description" content="This is the Sign in page for our project" />
 		<meta name="robots" content="noindex nofollow" />  <!-- do not want page or any of its links to be indexed -->
 		<meta http-equiv="author" content="Damian Scarpone" />
         <meta http-equiv="pragma" content="no-cache" /> <!-- want browser to reload this page every time -->
@@ -62,35 +61,10 @@
         <h1 class="text-muted">Login Registration</h1>
         <form action="php/request_acc.php" method="post" id="access">
             <fieldset>
-                <legend>Contact Details</legend>
-                <p><label>First Name: <input type="text" name="firstname" /></label></p>
-                <p><label>Last Name: <input type="text" name="lastname" /></label></p>
-                <p><label>Email:<br><input type="email" name="email" /></label></p>
-                <p><label>Website: <input type="url" name="url" /></label></p>
-                <p><label>Date of Birth: <input type="date" name="birthday" /></label></p>
-
-                <input type="radio" name="fac_or_student" value="faculty" />Faculty
-                <input type="radio" name="fac_or_student" value="student" />Student
+                <legend>Login</legend>
+                <p><label>Username: <input type="text" name="username" /></label></p>
+                <p><label>Password: <input type="text" name="password" /></label></p>
             </fieldset>
-
-            <p>I ... (check all that apply)</p>
-            <input type="checkbox" name="involvement" value="none" /> Have no involvement in Project<br />
-            <input type="checkbox" name="involvement" value="instructor" /> Am an instructor<br />
-            <input type="checkbox" name="involvement" value="student" /> Am a student<br />
-            <input type="checkbox" name="involvement" value="admin" /> Am a college Administrator<br />
-            <input type="checkbox" name="involvement" value="external" /> Am an external reveiwer<br />
-            <input type="checkbox" name="involvement" value="musk" /> Am Elon Musk<br />
-
-            <p>can you do 10 pull-ups?
-            <select name="pull-ups">
-                    <option value="yes">Yes</option>
-                    <option value="no">No</option>
-                    <option value="five">5</option>
-                    <option value="no_answer" selected></option>
-            </select>
-            </p>
-            <p>Tell us why we should give you access to this exclusive website</p>
-            <textarea>Don't be shy ... </textarea><br />
             <input class="submit"type="submit" value="Submit Request" />
         </form>
         </div>
