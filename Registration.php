@@ -10,7 +10,7 @@
 	
 	<!-- Link Custom CSS -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/registration_style.css" />
+    <!--<link rel="stylesheet" type="text/css" href="css/registration_style.css">-->
 	
 	<!-- Link JS -->
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -56,11 +56,10 @@
             
             <div class="row">       
 
-            </div>
-        </div>
-    </div> 
+    <!-- Main Section --> 
+	<div class="col-md-10" style='background-color: white'>	
 
-        <h1>Login Registration</h1>
+        <h1 class="text-muted">Login Registration</h1>
         <form action="php/request_acc.php" method="post" id="access">
             <fieldset>
                 <legend>Contact Details</legend>
@@ -94,8 +93,49 @@
             <textarea>Don't be shy ... </textarea><br />
             <input type="submit" value="Submit Request" />
         </form>
+        </div>
+        
 
-      
-        <p>Copyright &copy 2019 Damian Scarpone</p>
-    </body>
+        <!-- Second Section, This Column Width Smaller --> 
+						<div class="col-md-2" style='background-color:white'>
+							<div class="row">
+								<div class="col-md-12">
+							
+						<!-- Load news.php -->
+						
+									<?php 
+									include('news.php');
+									?>
+						
+									</div>
+								</div>
+							
+							<!-- Scond Section, Part Two ---> 
+							<div class="row">
+								<div class="col-md-12" style='background-color: white'>
+								<h1>Useful Links</h1>
+								
+						<!-- Load links.php -->
+						
+									<?php 
+									include('links.php');
+									?>
+						
+								</div>
+							</div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+						<div class="col-md-12">
+							<div class="container-bg">
+                             <p class="text-light text-center">Copyright &copy 2019 Damian Scarpone</p>
+                            </div>
+                        </div>
+                     </div>
+            </div>
+        </div>
+    </div>
+</body>
+    
 </html>
