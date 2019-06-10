@@ -96,7 +96,16 @@
             <li>Test Elevator CAN Buss</li>
             <li>Organize Repository</li>
         </ul>
-		
+        <h2>Week 4</h2>
+        <ul>
+            <li>Added code for the elevators inside buttons</li>
+            <li>Help complete elevator wiring</li>
+        </ul>
+        <h2>Week 5</h2>
+        <ul>
+            <li>Software Engineering Assignment #1</li>
+        </ul>
+
     </div>
 	</div>
     <div id="footer">
