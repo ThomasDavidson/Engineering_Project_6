@@ -65,7 +65,10 @@
                 <p><label>Username: <input type="text" name="username" /></label></p>
                 <p><label>Password: <input type="text" name="password" /></label></p>
             </fieldset>
-            <input class="submit"type="submit" value="Submit Request" />
+			<input class="submit"type="submit" value="Login" />
+			<form action="Registration.php">
+			<input class="submit"type="submit" value="Request Access" />
+			</form>
         </form>
         </div>
         

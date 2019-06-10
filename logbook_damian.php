@@ -62,11 +62,13 @@
 							
 							<figure>
 							<img src="Images/damian.jpg" alt="image of Damian"	title="Damian" width="200" />
-									<figcaption><b>Damian Scarpone:</b>Specialist in botchery.
+								<figcaption><b>Damian Scarpone:</b>Specialist in botchery.
 								Damians key role in the project is to be a motivational leader
 								and rule with an iron fist!
 								</figcaption>
 							</figure>
+							<p id='info'></p>
+							<script src="AgeObjectModel.js"></script>
 							
 							<br>
 							
@@ -136,7 +138,8 @@
 					<div class="row">
 						<div class="col-md-12">
 							<div class="container-bg">
-							<p class="text-light text-center">&copy; Copyright 2014-<script>document.write(new Date().getFullYear())</script></p>
+							<footer class="text-light text-center" id='foot'></footer>
+							<script src="DateObjectModel.js"></script>
 							</div>
 						</div>			
 					</div>
