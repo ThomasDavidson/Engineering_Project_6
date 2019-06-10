@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	
 	<!-- Link Custom CSS -->
-	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 	
 	<!-- Link JS -->
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -28,10 +28,10 @@
 				<div class="col-md-12">
 					<div class="page-header">
 						<br>
-						<h1 class="text-light"><img src="img/CC_logo.jpg" alt="Conestoga College Logo" height="60" wide="60"> Engineering Project 6</h1>
-						<h5 class="text-light">By: Thomas, Damien, Robert & Steve</h5>
+						<h1 class="text-light"><img src="Images/CC_logo.jpg" alt="Conestoga College Logo" height="60" wide="60"> Engineering Project 6</h1>
+						<h5 class="text-light">By: Thomas, Damian, Robert & Steve</h5>
 					</div>
-					</div>
+				</div>
 			</div>
 			<br>
 			
@@ -46,7 +46,7 @@
 				</div>
 			</div> 
 
-					<div class="row">
+			<div class="row">
 					
 					<!-- Main Section --> 
 						<div class="col-md-10" style='background-color: white'>	
@@ -128,12 +128,8 @@
 							<p class="text-light text-center">&copy; Copyright 2014-<script>document.write(new Date().getFullYear())</script></p>
 							</div>
 						</div>			
-						</div>
 					</div>
-				</div>
 			</div>
 		</div>
-	</div>
-	</div>
-  </body>
+</body>
 </html>
