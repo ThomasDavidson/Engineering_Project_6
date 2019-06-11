@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	
 	<!-- Link Custom CSS -->
-	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
 	
 	<!-- Link JS -->
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -28,7 +28,7 @@
 				<div class="col-md-12">
 					<div class="page-header">
 						<br>
-						<h1 class="text-light"><img src="img/CC_logo.jpg" alt="Conestoga College Logo" height="60" wide="60"> Engineering Project 6</h1>
+						<h1 class="text-light"><img src="../images/CC_logo.jpg" alt="Conestoga College Logo" height="60" wide="60"> Engineering Project 6</h1>
 						<h5 class="text-light">By: Thomas, Damien, Robert & Steve</h5>
 					</div>
 					</div>
@@ -405,12 +405,11 @@
 							<div class="row">
 								<div class="col-md-12" style='background-color: white'>
 								<h1>Useful Links</h1>
-								<ul>
-								  <li><a href="#">Our Youtube Channel</a></li>
-								  <li><a href="#">Our Github Repository</a></li>
-								  <li><a href="#">link 3</a></li>
-								  <li><a href="#">link 4</a></li>
-								</ul>
+
+					<?php 
+					include('links.php');
+					?>
+					
 								</div>
 							</div>
 						</div>

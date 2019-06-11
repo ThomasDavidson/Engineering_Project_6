@@ -97,8 +97,8 @@
 							  
 							  <tr>
 								<th scope="row">Complete STM32 Tutorial</th>
+								<td>100%</td>
 								<td class="gantt-bar"></td>
-								<td></td>
 								<td></td>
 								<td></td>
 								<td></td>
@@ -117,7 +117,7 @@
 							  <tr>
 								<th scope="row">Verify boards talk together</th>
 								<td></td>
-								<td></td>
+								<td class="gantt-bar"></td>
 								<td></td>
 								<td></td>
 								<td></td>
@@ -131,6 +131,43 @@
 								<td></td>
 								<td></td>
 							  </tr>
+							  
+							  <tr>
+								<th scope="row">Implement Floor Filters</th>
+								<td>50%</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td class="gantt-bar"></td>
+								<td class="gantt-bar"></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							  </tr>
+							  
+							  <tr>
+								<th scope="row">Test Filter</th>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td ></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							  </tr>
+							  
 							  
 								<tr>
 								<th scope="row"></th>
@@ -152,8 +189,8 @@
 							  
 							  
 							  <tr>
-								<th scope="row" class="gantt-new">Create schematic diagrams</th>
-								<td>100%</td>
+								<th scope="row" class="gantt-new">Create schematic drawings</th>
+								<td></td>
 								<td></td>
 								<td></td>
 								<td></td>
@@ -172,8 +209,8 @@
 							  
 							  <tr>
 								<th scope="row">Install / Activate Altium</th>
-								<td></td>
-								<td></td>
+								<td>100</td>
+								<td class="gantt-bar"></td>
 								<td></td>
 								<td></td>
 								<td></td>
@@ -190,8 +227,8 @@
 							  
 							  	<tr>
 								<th scope="row">Create Schematic for Floor 3</th>
-								<td></td>
-								<td></td>
+								<td>100</td>
+								<td class="gantt-bar"></td>
 								<td></td>
 								<td></td>
 								<td></td>
@@ -208,8 +245,8 @@
 							  
 							  	<tr>
 								<th scope="row">Create Schematic for Floor 2</th>
-								<td></td>
-								<td></td>
+								<td>100</td>
+								<td class="gantt-bar"></td>
 								<td></td>
 								<td></td>
 								<td></td>
@@ -226,8 +263,8 @@
 							  
 							  <tr>
 								<th scope="row">Create Schematic for Floor 1</th>
-								<td></td>
-								<td></td>
+								<td>100</td>
+								<td class="gantt-bar"></td>
 								<td></td>
 								<td></td>
 								<td></td>
@@ -244,8 +281,8 @@
 							  
 							  	<tr>
 								<th scope="row">Create Schematic for Bottom Floor</th>
-								<td></td>
-								<td></td>
+								<td>100</td>
+								<td class="gantt-bar"></td>
 								<td></td>
 								<td></td>
 								<td></td>
@@ -280,7 +317,7 @@
 							  
 							<tr>
 								<th scope="row" class="gantt-new">Wire the elevator</th>
-								<td>100%</td>
+								<td></td>
 								<td></td>
 								<td></td>
 								<td></td>
@@ -372,42 +409,6 @@
 							    <tr>
 								<th scope="row"></th>
 								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-							  </tr>
-							  
-								<tr>
-								<th scope="row" class="gantt-new">Program STM32 Boards to Use Buttons</th>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td class="gantt-bar"></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-							  </tr>
-							  
-							  <tr>
-								<th scope="row">Implement Floor Filters</th>
-								<td>50%</td>
 								<td></td>
 								<td></td>
 								<td></td>
@@ -531,6 +532,24 @@
 								<td></td>
 							  </tr>
 							  
+							  <tr>
+								<th scope="row"></th>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							  </tr>
+							  
 							  	<tr>
 								<th scope="row" class="gantt-new">Create Client Program</th>
 								<td></td>
@@ -621,6 +640,7 @@
 								<td></td>
 							  </tr>
 							  
+							  
 							  	<tr>
 								<th scope="row">Write code to accept commands from client</th>
 								<td></td>
@@ -639,6 +659,24 @@
 								<td></td>
 							  </tr>
 							 						  
+							  
+							   <tr>
+								<th scope="row"></th>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							  </tr>
 							  
 							  	<tr>
 								<th scope="row"></th>
@@ -711,6 +749,61 @@
 								<td></td>
 								<td></td>
 							  </tr>
+							 
+							 	<tr>
+								<th scope="row"></th>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							  </tr>
+							  
+							  	<tr>
+								<th scope="row"></th>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							  </tr>
+							  
+							 <tr>
+								<th scope="row" class="gantt-new">PHASE 2 END</th>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							  </tr>
+							  
 							  
 							  
 							  

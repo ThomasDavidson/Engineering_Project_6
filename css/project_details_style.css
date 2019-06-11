@@ -1,4 +1,16 @@
-body {font-family: Georgia, 'Times New Roman', Times, serif}
+body {
+	font-family: Georgia, 'Times New Roman', Times, serif;
+
+
+}
+	
+.mike-code { 
+	width: 980px;
+	margin-left:auto; 
+    margin-right:auto;
+	border-style: solid;
+	 border-radius: 5px;
+}
 
 p{
     font-size: 100%;

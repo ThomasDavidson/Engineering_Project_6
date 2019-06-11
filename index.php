@@ -43,7 +43,7 @@
 
 			<!-- Load the Navigation Bar wit hPHP include function --> 
 					<?php 
-					include('menu.php');
+					include('php/menu.php');
 					?>
 						
 				</div>
@@ -55,278 +55,51 @@
 						<div class="col-md-10" style='background-color: white'>	
 						
 							<h1 class="text-muted">Welcome to the Elevator Project Homepage</h1>
+							
 							<br>
 
 							<figure>
 							<img src="Images/logo.jpg" alt="Team Logo(Larry)"	title="Larry" width="200" />
-									<figcaption><b>Team Larry</b></figcaption>
+									<figcaption><H2>Team Larry</H2></figcaption>
 							</figure>
 							
+							<br>
+							
+							
 							<h2>Members</h2>
-						
-							<h3>Damian </h3>
-							<a href = "https://www.linkedin.com/in/damian-scarpone-496b57130/" target="_blank" class="fa fa-linkedin-square"></a>
-							
-							<br>
-							<br>
-							<h3> Steve </h3>
-							<a href = "https://www.linkedin.com/in/stephen-han-692a2445/" target="_blank" class="fa fa-linkedin-square"></a>
+															
+							<ol>
+								<li><p>Damian 
+								<a href = "https://www.linkedin.com/in/damian-scarpone-496b57130/" target="_blank" class="fa fa-linkedin-square"></a></li></p>
 
-							<br>
-							<br>
-							
-							<h3> Robert </h3>
-							<a href = "https://www.linkedin.com/in/rboettcher/" target="_blank" class="fa fa-linkedin-square"></a>
+								<li><p>Steve
+								<a href = "https://www.linkedin.com/in/stephen-han-692a2445/" target="_blank" class="fa fa-linkedin-square"></a></li></p>
 
-							
-							<br>
-							<br>
-							
-							<h3> Thomas </h3>
-							<a href = "https://www.linkedin.com/in/thomas-davidson-661ab7115/" target="_blank" class="fa fa-linkedin-square"></a>
+								<li><p>Robert
+								<a href = "https://www.linkedin.com/in/rboettcher/" target="_blank" class="fa fa-linkedin-square"></a></li></p>
 
+								<li><p>Thomas 
+								<a href = "https://www.linkedin.com/in/thomas-davidson-661ab7115/" target="_blank" class="fa fa-linkedin-square"></a></li></p>
+
+							</ol>
 							
 							<br>
 							<br>
 							
-							<h2>Calendar</h2>
-							<iframe src="https://calendar.google.com/calendar/embed?src=hanpc14%40gmail.com&ctz=America%2FToronto" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-							
+							<h2>Team Video</h2>
+								<iframe width="560" height="315" src="https://www.youtube.com/embed/MxT51bvUyhs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 							<br>
 							<br>
 							
 							<h2>Gantt Chart</h2>
 
 					<!-- Have a Table that wraps --> 
-					
-						<div class="table-responsive">
-							<table class="table table-bordered">
+						<?php 
+						include('php/chart.php');
+						?>
 						
-								
-							  <thead class="thead-dark">
-							  <tr>
-								<th scope="col"></th>
-								<th scope="col">WK1<br></th>
-								<th scope="col">WK2</th>
-								<th scope="col">WK3</th>
-								<th scope="col">WK4</th>
-								<th scope="col">WK5</th>
-								<th scope="col">WK6</th>
-								<th scope="col">WK7</th>
-								<th scope="col">WK8</th>
-								<th scope="col">WK9</th>
-								<th scope="col">WK10</th>
-								<th scope="col">WK11</th>
-								<th scope="col">WK12</th>
-								<th scope="col">WK13</th>
-								<th scope="col">WK14</th>
-							  </tr>
-							  </thead>
-							  
-							 
-							  <tr>
-								<th scope="row">TASK1</th>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-							  </tr>
-							  </thead>
-							  
-							  <tr>
-								<th scope="row">TASK2</th>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-							  </tr>
-							  
-							  <tr>
-								<th scope="row">TASK3</th>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-							  </tr>
-							  
-
-							  <tr>
-								<th scope="row">TASK4</th>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-							  </tr>
-							  
-							  <tr>
-								<th scope="row">TASK5</th>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-							  </tr>
-							  
-							  							  <tr>
-								<th scope="row">TASK5</th>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-							  </tr>
-							  
-							  							  <tr>
-								<th scope="row">TASK5</th>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-							  </tr>
-							  
-							  <tr>
-								<th scope="row">TASK5</th>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-							  </tr>
-							  
-							  	<tr>
-								<th scope="row">TASK5</th>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-							  </tr>
-							  
-							 <tr>
-								<th scope="row">TASK5</th>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-							  </tr>
-							  
-							  	<tr>
-								<th scope="row">TASK5</th>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-							  </tr>
-							  
-							</table>
-						</div>
-						</div>
+						</DIV>
 						
 						<!-- Second Section, This Column Width Smaller --> 
 						<div class="col-md-2" style='background-color:white'>
@@ -336,7 +109,7 @@
 						<!-- Load news.php -->
 						
 									<?php 
-									include('news.php');
+									include('php/news.php');
 									?>
 						
 									</div>
@@ -350,7 +123,7 @@
 						<!-- Load links.php -->
 						
 									<?php 
-									include('links.php');
+									include('php/links.php');
 									?>
 						
 								</div>
