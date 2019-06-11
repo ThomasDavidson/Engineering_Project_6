@@ -1,0 +1,4 @@
+A) A branch is a essentaully a spin off version of the main branch. it is used to edit a the known functinal branch of code to try new things, while maintiaing a revertable version. a branch is essentall a prototype where as a master branch is the current final product.
+B) a commit is were you publish the current progamming you've done. It is then accessable to anyone allowed to see it. Commits are typically made to the prototype branch or can be pushed right away to the master branch.
+C) Pull request is for setting tasks or asking for help on a specfic section. its usefull in the it can be used for diving up tasks to different group members making project managment easier.
+D) A merge is where a prototype branch of code has completed exparimental fetures enough that it can be submitted to overwrite the main branch. essentally it ends the testing phase.
