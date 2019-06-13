@@ -41,11 +41,23 @@ def Main():
             print('Received from server: ' + data)
 
         def StreetNum_Func():
-            Street_Num = input('\nStreet #: ')
-            mySocket.send(Street_Num.encode()) 
-            data = mySocket.recv(1024).decode()   # 1024 is buffer sizerint('Received from server: ' + data)
-            print('Received from server: ' + data)
+                tries = 0
+                
+                while (tries < 4):
+                    
+                    # Only accept numbers 
+                    Street_Num = input('\nStreet #: ')
 
+                    try:
+                       int(Street_Num)
+                       mySocket.send(Street_Num.encode()) 
+                       data = mySocket.recv(1024).decode()   # 1024 is buffer sizerint('Received from server: ' + data)
+                       print('Received from server: ' + data)
+                        
+                    except ValueError:
+                        print('Only Enter Numbers!')
+                        tries = tries + 1
+                                                      
         def StreetName_Func():
             Street_Name = input('\nStreet Name: ')
             mySocket.send(Street_Name.encode()) 
