@@ -1,25 +1,25 @@
 <ul class="nav">
 	<li class="nav-item">
-		<a class="nav-link active" href="../index.php">Home</a>
+		<a class="nav-link active" href="index.php">Home</a>
 	</li>
 	<li class="nav-item">
-		<a class="nav-link" href="../php/about.php">About Us</a>
+		<a class="nav-link" href="about.php">About Us</a>
 	</li>
 
 	<li class="nav-item">
-		<a class="nav-link" href="../html/Project_details.html" target="_blank">Project Details</a>
+		<a class="nav-link" href="html/Project_details.html" target="_blank">Project Details</a>
 	</li>
 	
 	<li class="nav-item">
-		<a class="nav-link" href="../php/documentation.php" target="_blank">Documentation</a>
+		<a class="nav-link" href="documentation.php" target="_blank">Documentation</a>
 	</li>
 
 	<li class="nav-item">
-		<a class="nav-link" href="../php/registration.php" target="_blank">Register</a>
+		<a class="nav-link" href="registration.php" target="_blank">Register</a>
 	</li>
 
 	<li class="nav-item">
-		<a class="nav-link" href="../php/form.php" target="_blank">Sign In</a>
+		<a class="nav-link" href="form.php" target="_blank">Sign In</a>
 	</li>
 
 	<!-- Drop Down Menu -->

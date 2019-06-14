@@ -43,7 +43,7 @@
 
 			<!-- Load the Navigation Bar wit hPHP include function --> 
 					<?php 
-					include('php/menu.php');
+					include('menu.php');
 					?>
 						
 				</div>

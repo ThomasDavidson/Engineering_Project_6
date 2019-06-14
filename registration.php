@@ -60,7 +60,7 @@
 	<div class="col-md-10" style='background-color: white'>	
 
         <h1 class="text-muted">Login Registration</h1>
-        <form id="reqaccess"action="../php/request_acc.php" method="post" id="access">
+        <form id="reqaccess"action="request_acc.php" method="post" id="access">
             <fieldset>
                 <legend>Contact Details</legend>
                 <div>
