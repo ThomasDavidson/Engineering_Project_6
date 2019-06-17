@@ -1,29 +1,30 @@
 <?php
 
-	$submitted = !empty($_POST); //form subbmitted if inputs not empty
-	
+	session_start(); //start login
+	//form subbmitted if inputs not empty
+	$submitted = !empty($_POST); 
 	if($submitted ==1)
 	{
-		session_start(); //start login
 		$username =$_POST['username'];
 		$password =$_POST['password'];
-
-
-		echo "<p>Form submitted right (1 for true): $submitted</p>";
-		echo "<p>Username sent $username </p>";
-		echo "<p>Password sent $password </p>";
 	}
-	
+
 	//checks that the form has data - Not just accessing the page
 	else
 	{
 		echo "Bad Login";
 	}
 
-	if($username&&$password)
+	//checks user name and p[assword]
+	if($username == 'Bob' && $password == '3')
 	{
 		$_SESSION['username']=$username;
-		echo ""
+		echo "Login sucessful:";
+		echo "click here to enter the members page <a href=\"members.php\">here</a> </p>";
 	}
-	
+	//login fails
+	else
+	{
+		echo "invalid credentals, please click <a href=\"form.php\">here</a> to try again </p>";
+	}
 ?>
