@@ -101,6 +101,11 @@
 							<ul>
 								<li> Worked on Completing the Front-End Development of our website</li>
 							</ul>
+
+							<h2>Week 6</h2>
+							<ul>
+								<li> Worked on Completing the Back-End Development of our website</li>
+							</ul>
 							<a class="top-link" href="logbook_damian.php">Top of Page</a>
 						</div>
 
