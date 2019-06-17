@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">  
 	
 	<!-- Link Custom CSS -->
-    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 	
 	<!-- Link JS -->
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -60,14 +60,14 @@
 
         <h1 class="text-muted">Login Registration</h1>
 		
-        <form action="../php/registrationu.php" method="post" id="access">
+        <form action="authenticate.php" method="post" id="access">
             <fieldset>
                 <legend>Login</legend>
                 <p><label>Username: <input type="text" name="username" id='username'/></label></p>
                 <p><label>Password: <input type="text" name="password" id='password'/></label></p>
             </fieldset>
 			<input class="submit"type="submit" value="Login" />
-			<form action="../php/registration.php">
+			<form action="authenticate.php">
 			<input class="submit"type="submit" value="Request Access" />
 			</form>
 			<p> Error Messages:</p>
