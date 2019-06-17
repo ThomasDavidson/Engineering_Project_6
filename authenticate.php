@@ -20,7 +20,7 @@
 	{
 		$_SESSION['username']=$username;
 		echo "Login sucessful:";
-		echo "click here to enter the members page <a href=\"members.php\">here</a> </p>";
+		echo "click to return<a href=\"index.php\">here</a> </p>";
 	}
 	//login fails
 	else

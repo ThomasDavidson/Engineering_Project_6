@@ -22,6 +22,15 @@
 		<a class="nav-link" href="form.php" target="_blank">Sign In</a>
 	</li>
 
+	<!-- Secret member lounge -->
+	<?php 
+		session_start();
+		if(null != $_SESSION && $_SESSION['username'] == 'Bob')
+			{
+				require 'admintools.html';
+			}
+	?>
+
 	<!-- Drop Down Menu -->
 	<li class="nav-item dropdown ml-md-left">
 		 <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown">Logbooks</a>
