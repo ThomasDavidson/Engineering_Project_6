@@ -1,15 +1,15 @@
 # server code from: https://shakeelosmani.wordpress.com/2015/04/13/python-3-socket-programming-example/
-import time
+
 import socket                                   # import python sockets library
 import csv
-import pickle
+
 
 
 
 def Main():                                     # define the main function
     host = "127.0.0.1"                          # define host variable as local machine
     port = 5000                                 # define port on local machine (> 1024)
-    path = r'C:\Users\Robert\Documents\GitHub\Engineering_Project_6\Assignment 3\Database.csv' #database location
+    path = r'C:\xampp\htdocs\Engineering_Project_6\Assignment 3\Database.csv' #database location
     mySocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)  # define mySocket as an instance of a python socket, socket.socket(AF_INET, SOCK_DGRAM for UDP or SOCK_STREAM for TCP)
     mySocket.bind((host, port))                 # bind take a tuple as input (bind the host and port to the socket created above) 
 
@@ -28,7 +28,7 @@ def Main():                                     # define the main function
             with open(path, 'r') as database:
                 data = csv.DictReader(database, delimiter=',')
                          
-                for row in data:
+                for row in data:                     
                     current_data = row['ID']
                     current_data = current_data +','
                     conn.send(current_data.encode())
@@ -65,8 +65,9 @@ def Main():                                     # define the main function
                     current_data = current_data +','
                     conn.send(current_data.encode())
                    
-                    breaker = conn.recv(1024).decode()         # decode() necessary in python 3
-                    if breaker != 'y' or 'Y':
+                    breaker = conn.recv(1024).decode()         #checks to see if user wants to load another row
+                    breaker = breaker.upper()
+                    if breaker == 'N':
                         break
     conn.close()
 
