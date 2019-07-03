@@ -19,6 +19,37 @@ def Main():
 
     mySocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)  # define mySocket as an instance of a python socket, socket.socket(AF_INET, SOCK_DGRAM for UDP or SOCK_STREAM for TCP)
     mySocket.connect((host, port))
+    while True:
+        command = input("Enter a command\n1:Read\n 2:New\n 3:Modify\n->")
+        if command == '1':        
+            while True:
+                mySocket.send(command.encode())  
+
+                recive_length = 0
+                recived_entry = ['','','','','','','','','']
+                num_recived_entrys = 0
+
+
+                while num_recived_entrys != 9:
+                    data = mySocket.recv(1024).decode()         # decode() necessary in python 3           
+                    current_data_load = data.split(",")       
+                    
+                    recive_length = len(current_data_load) -1
+                    i = 0
+                    for i in range(recive_length):
+                        recived_entry[num_recived_entrys+ i] = current_data_load[i]
+
+                    num_recived_entrys  = num_recived_entrys +recive_length 
+                
+
+                print("ID = " + recived_entry[0])
+                print("Name:" + recived_entry[1] + " "+ recived_entry[2])
+
+                countinue = input('\n\nView next record? y/n')
+                if countinue != 'y' or 'Y':
+                     break
+                mySocket.send(countinue.encode())
+
 
     message = input(" -> ")
 
