@@ -18,38 +18,48 @@ def Main():
     #Country: <Character String >
 
     mySocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)  # define mySocket as an instance of a python socket, socket.socket(AF_INET, SOCK_DGRAM for UDP or SOCK_STREAM for TCP)
-    mySocket.connect((host, port))
+    mySocket.connect((host, port))                                 #connects to the host
+
+    #infinite loop
     while True:
-        command = input("Enter a command\n1:Read\n 2:New\n 3:Modify\n->")
-        if command == '1':        
+        command = input("Enter a command\n1:Read\n 2:New\n 3:Modify\n->")       #essentally the main menu
+        if command == '1': 
+            mySocket.send(command.encode())                                     #sends response of 1       
             while True:
-                mySocket.send(command.encode())  
 
-                recive_length = 0
-                recived_entry = ['','','','','','','','','']
-                num_recived_entrys = 0
+               
+
+                recive_length = 0                                               #is the ammount of elements that have been sent
+                recived_entry = ['','','','','','','','','']                    #is an array that holds a whole row of data - P
+                num_recived_entrys = 0                                          #total amount of elements recived out of 8
 
 
-                while num_recived_entrys != 9:
-                    data = mySocket.recv(1024).decode()         # decode() necessary in python 3           
-                    current_data_load = data.split(",")       
+                while num_recived_entrys != 9:      
+                    data = mySocket.recv(1024).decode()                         #decode() necessary in python 3           
+                    current_data_load = data.split(",")                         #server sends up to the whole row as a single string, this breaks it at each csv into a list
                     
-                    recive_length = len(current_data_load) -1
-                    i = 0
-                    for i in range(recive_length):
-                        recived_entry[num_recived_entrys+ i] = current_data_load[i]
+                    recive_length = len(current_data_load) -1                   #checks the current amount of elements recived and subtracts 1 as .split adds an empty one at the end
+                    i = 0                                       
+                    for i in range(recive_length):                              #standard for loop i - recive length, loads elements into recived
+                        recived_entry[num_recived_entrys+ i] = current_data_load[i]     
 
-                    num_recived_entrys  = num_recived_entrys +recive_length 
+                    num_recived_entrys  = num_recived_entrys +recive_length     #checks how many total elemnts have been recieved
                 
 
-                print("ID = " + recived_entry[0])
-                print("Name:" + recived_entry[1] + " "+ recived_entry[2])
+                print("ID = " + recived_entry[0])                               #prints the recived row, uses for loop to print address
+                print("\nName:" + recived_entry[1] + " "+ recived_entry[2] +"\n")
+                for x in range(6):
+                     print(" " + recived_entry[x+3])
 
-                countinue = input('\n\nView next record? y/n')
-                if countinue != 'y' or 'Y':
-                     break
-                mySocket.send(countinue.encode())
 
+                countinue_loop = input('\nView next record? y/n:')
+                if countinue_loop == 'y' or 'Y':
+                     mySocket.send(countinue_loop.encode())
+                else:
+                    if countinue_loop == 'n' or 'N':
+                        mySocket.send(countinue_loop.encode())                  #sends a disconnect request
+                        break
+            
 
     message = input(" -> ")
 
