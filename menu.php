@@ -7,19 +7,19 @@
 	</li>
 
 	<li class="nav-item">
-		<a class="nav-link" href="html/Project_details.html" target="_blank">Project Details</a>
+		<a class="nav-link" href="html/Project_details.html">Project Details</a>
 	</li>
 	
 	<li class="nav-item">
-		<a class="nav-link" href="documentation.php" target="_blank">Documentation</a>
+		<a class="nav-link" href="documentation.php">Documentation</a>
 	</li>
 
 	<li class="nav-item">
-		<a class="nav-link" href="registration.php" target="_blank">Register</a>
+		<a class="nav-link" href="registration.php">Register</a>
 	</li>
 
 	<li class="nav-item">
-		<a class="nav-link" href="form.php" target="_blank">Sign In</a>
+		<a class="nav-link" href="form.php">Sign In</a>
 	</li>
 
 	<!-- Secret member lounge -->
@@ -35,10 +35,10 @@
 	<li class="nav-item dropdown ml-md-left">
 		 <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown">Logbooks</a>
 		<div class="dropdown-menu dropdown-menu-center" aria-labelledby="navbarDropdownMenuLink">
-			 <a class="dropdown-item" href="../php/logbook_damian.php" target="_blank">Damian</a>
-			 <a class="dropdown-item" href="../php/logbook_robert.php" target="_blank">Robert</a>
-			 <a class="dropdown-item" href="../php/logbook_steve.php" target="_blank">Steve</a>
-			 <a class="dropdown-item" href="../php/logbook_thomas.php" target="_blank">Thomas</a>
+			 <a class="dropdown-item" href="../php/logbook_damian.php">Damian</a>
+			 <a class="dropdown-item" href="../php/logbook_robert.php">Robert</a>
+			 <a class="dropdown-item" href="../php/logbook_steve.php">Steve</a>
+			 <a class="dropdown-item" href="../php/logbook_thomas.php">Thomas</a>
 
 		</div>
 	</li>
