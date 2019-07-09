@@ -1,7 +1,8 @@
 <?php
-
+    //logout.php
     session_start();
     session_destroy();
 
-    echo"you're now logged out";
+    echo "You have been logged out. Click <a href='./form.php'> here</a> to log in again"
+
 ?>
