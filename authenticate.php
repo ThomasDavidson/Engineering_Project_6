@@ -1,30 +1,37 @@
 <?php
+include 'php/database.php';
 
-	session_start(); //start login
-	//form subbmitted if inputs not empty
-	$submitted = !empty($_POST); 
-	if($submitted ==1)
-	{
-		$username =$_POST['username'];
-		$password =$_POST['password'];
-	}
+session_start();
+$username =  $_POST['username'];
+$password = $_POST['password'];
 
-	//checks that the form has data - Not just accessing the page
-	else
-	{
-		echo "Bad Login";
-	}
+if ($username && $password) {
+    //connects to database
+    $conn = new database('localhost', 'elevator', 'root', '');
 
-	//checks user name and p[assword]
-	if($username == 'Bob' && $password == '3')
-	{
-		$_SESSION['username']=$username;
-		echo "Login sucessful:";
-		echo "click to return<a href=\"index.php\">here</a> </p>";
-	}
-	//login fails
-	else
-	{
-		echo "invalid credentals, please click <a href=\"form.php\">here</a> to try again </p>";
-	}
+    $conn->dbConnect();
+
+    $query = "SELECT * FROM authorizedUsers WHERE username='$username' AND password='$password'";
+
+
+    $rows = $conn->db->query($query);
+
+    $user = $rows->fetch();
+
+    if ($rows->rowCount() == 1) {
+        if (($user['username'] == $username) && ($user['password'] == $password)) {
+            $_SESSION['username'] = $username;
+            echo "<p>Congradulations, you are now logged into the site.</p>";
+            echo "<p>Please click <a href=\"members.php\">here</a></p>";
+        }
+    } else {
+        echo "<p>Authentication failed  </p>";
+    }
+
+    echo "<b /><b />";
+}
+
+
+echo "<p>Usermane: $username</p>";
+echo "<p>Password: $password</p>";
 ?>
