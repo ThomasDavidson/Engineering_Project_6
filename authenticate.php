@@ -5,11 +5,16 @@ session_start();
 $username =  $_POST['username'];
 $password = $_POST['password'];
 
+echo "<p>Username: $username</p>";
+echo "<p>Password: $password</p>";
+
 if ($username && $password) {
     //connects to database
-    $conn = new database('localhost', 'elevator', 'root', '');
+    $conn = new database('192.168.0.200', 'elevator', 'root', '3Yn4$zT&');
 
     $conn->dbConnect();
+
+
 
     $query = "SELECT * FROM authorizedUsers WHERE username='$username' AND password='$password'";
 
@@ -31,7 +36,4 @@ if ($username && $password) {
     echo "<b /><b />";
 }
 
-
-echo "<p>Usermane: $username</p>";
-echo "<p>Password: $password</p>";
 ?>
