@@ -35,10 +35,10 @@
 	<li class="nav-item dropdown ml-md-left">
 		 <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown">Logbooks</a>
 		<div class="dropdown-menu dropdown-menu-center" aria-labelledby="navbarDropdownMenuLink">
-			 <a class="dropdown-item" href="../php/logbook_damian.php">Damian</a>
-			 <a class="dropdown-item" href="../php/logbook_robert.php">Robert</a>
-			 <a class="dropdown-item" href="../php/logbook_steve.php">Steve</a>
-			 <a class="dropdown-item" href="../php/logbook_thomas.php">Thomas</a>
+			 <a class="dropdown-item" href="logbook_damian.php">Damian</a>
+			 <a class="dropdown-item" href="logbook_robert.php">Robert</a>
+			 <a class="dropdown-item" href="logbook_steve.php">Steve</a>
+			 <a class="dropdown-item" href="logbook_thomas.php">Thomas</a>
 
 		</div>
 	</li>
