@@ -65,7 +65,7 @@
 						<fieldset>
 							<legend>Login</legend>
 							<p><label>Username: <input type="text" name="username" id='username' /></label></p>
-							<p><label>Password: <input type="text" name="password" id='password' /></label></p>
+							<p><label>Password: <input type="password" name="password" id='password' /></label></p>
 						</fieldset>
 						<input class="submit" type="submit" value="Login" />
 						<form action="authenticate.php">
