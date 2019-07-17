@@ -19,7 +19,7 @@
         
         $this->db->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_BOTH);
 
-        return;
+        return $this->db;
     }
 
     public function __construct(string $host, string $dbname, string $username, string $password)
