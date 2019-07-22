@@ -57,6 +57,7 @@
 
      <h1 class="text-muted">Members Only Page</h1>
 	
+	<div>
 	<?php
     include 'database.php';
 	
@@ -71,7 +72,8 @@
         echo "<p>You must be logged in</p>";
     }
     ?>
-	<br>
+	<br />
+
 	<h2>Change User Password</h2>
 		
 		<form id="changePassword" action="../changePassword.php" method="post">		
@@ -79,15 +81,19 @@
 		  <label for="newPassword">New Password: <abbr title="This field is mandatory">*</abbr></label>
 		  <input type="password" id="newPassword" name="newPassword" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
 			
-		  <h3>Password must contain the following:</h3>
-			  <p id="letterPSWD" class="invalidPSWD">A <b>lowercase</b> letter</p>
-			  <p id="capitalPSWD" class="invalidPSWD">A <b>capital (uppercase)</b> letter</p>
-			  <p id="numberPSWD" class="invalidPSWD">A <b>number</b></p>
-			  <p id="lengthPSWD" class="invalidPSWD">Minimum <b>8 characters</b></p>
+		  <p align="center">Password must contain the following:</p>
+			  <p align="center" id="letterPSWD" class="invalidPSWD">A <b>lowercase</b> letter</p>
+			  <p align="center" id="capitalPSWD" class="invalidPSWD">A <b>capital (uppercase)</b> letter</p>
+			  <p align="center" id="numberPSWD" class="invalidPSWD">A <b>number</b></p>
+			  <p align="center" id="lengthPSWD" class="invalidPSWD">Minimum <b>8 characters</b></p>
 	
 		<button>Change Password</button>
 		
 		</form>
+	
+	<script src="js/ValidatePassword.js"></script>
+	
+	<br />
 
     <?php
     if (isset($_SESSION['username'])) {
@@ -141,6 +147,8 @@
     }
     ?>
 
+	<br />
+
 	<?php
 	echo"<h2>Entire content of the elevatorNetwork table<h2>";
 	
@@ -157,6 +165,7 @@
 	?>
 	
 	<br>
+	
 	<?php
 	echo"<h2>Log Data<h2>";
 	
@@ -173,10 +182,12 @@
 		}
 	}
 	
+	echo "<br />";
+	
+	echo"<h3>Click <a href='Logout.php'>here</a>  to Log Out</h3>";
+
 	?>
 	
-	
-	<script src="js/memberInput.js"></script>
 	
 	</div>
        

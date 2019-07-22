@@ -59,46 +59,22 @@
     <!-- Main Section --> 
 	<div class="col-md-12" style='background-color: white'>	
 
-        <h1 class="text-muted">Login Registration</h1>
+        <h1 class="text-muted">Logged Out</h1>
 		
 		<div class="container center_div"> 
-		<form id="ReqAccess" action="../add2database.php" method="post">		
-		  <div>
-			<label for="fname">First name: <abbr title="This field is mandatory">*</abbr></label>
-			<input id="fname" class="text_input" type="text" required name="fname">
-			<p id=fnameFeedback></a>
-		  </div>
-		  
-		  <div>
-			<label for="lname">Last Name: <abbr title="This field is mandatory">*</abbr></label>
-			<input id="lname" class="text_input" type="text" required name="lname">
-			<a id=lnameFeedback></a>
-		  </div>
-		  
-		  <div>
-			<label for="username">Username: <abbr title="This field is mandatory">*</abbr></label>
-			<input id="username" class="text_input" type="text" required name="username">
-			<a id=usernameFeedback></a>
-		  </div>
-		  
-		  <div>
-		 <label for="password">Password: <abbr title="This field is mandatory">*</abbr></label>
-		  <input type="password" id="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+		
+		<? php
+		
+		session_start();
+		
+		session_destroy();
+		
+		echo "You have been logged out."
 			
-		  <h3>Password must contain the following:</h3>
-			  <p id="letterPSWD" class="invalidPSWD">A <b>lowercase</b> letter</p>
-			  <p id="capitalPSWD" class="invalidPSWD">A <b>capital (uppercase)</b> letter</p>
-			  <p id="numberPSWD" class="invalidPSWD">A <b>number</b></p>
-			  <p id="lengthPSWD" class="invalidPSWD">Minimum <b>8 characters</b></p>
-		</div>
+		
+		?>
+		
 	
-		<button>Submit</button>
-		  </p>
-		 
-		</form>
-		</div>
-			  
-			<script src="../js/ValidateRegistration.js"></script>
         </div>
 			
 	</div>
