@@ -6,6 +6,9 @@ require_once __DIR__ . '/InsideButtons.php';
 //require_once __DIR__ . '/FloorNode1.php';
 //require_once __DIR__ . '/FloorNode2.php';
 //require_once __DIR__ . '/FloorNode3.php';
+//require_once __DIR__ . '/outbutton1.php';
+//require_once __DIR__ . '/outbutton2.php';
+//require_once __DIR__ . '/outbutton3.php';
 
 
 $distsensor = new distsensor(100,0);

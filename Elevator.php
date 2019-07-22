@@ -9,14 +9,16 @@ class Elevator{
         $this->requestedFloor = $requestedFloor;
     } 
     
+    public function getFloor(): int {
+        return $this->currentFloor;
+    }
+    
     public function requestFloor($requestedFloor){
         $this->requestedFloor = $requestedFloor;
         $this->currentFloor = $requestedFloor;
     }
 
-    public function getFloor(): int {
-        return $this->currentFloor;
-    }
+    
 
    
 
