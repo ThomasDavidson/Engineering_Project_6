@@ -150,7 +150,7 @@
 	<br />
 
 	<?php
-	echo"<h2>Entire content of the elevatorNetwork table<h2>";
+	echo"<h2>Entire content of the elevatorNetwork table</h2>";
 	
 	if (isset($_SESSION['username'])) {
 		$rows = $conn->db->query('SELECT * FROM elevatorNetwork ORDER BY nodeID');
@@ -187,8 +187,7 @@
 	echo"<h3>Click <a href='Logout.php'>here</a>  to Log Out</h3>";
 
 	?>
-	
-	
+		
 	</div>
        
 		<div class="row">
