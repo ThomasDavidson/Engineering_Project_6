@@ -78,14 +78,18 @@
         
 		<form action=\"members.php\" method=\"post\" id=\"form\">
             Status: <input type=\"text\" name=\"status\" id=\"inputStatus\"> <br />
-            Current Floor: <input type=\"text\" name=\"currentFloor\" id=\"inputRequestedFloor\"> <br />
-            Requested Floor: <input type=\"text\" name=\"requestedFloor\" id=\"inputCurrentFloor\"> <br />
+            Requested Floor: <input type=\"text\" name=\"requestedFloor\" id=\"inputRequestedFloor\"> <br />
             <input type=\"submit\" value=\"Add to Database\"  id=\"submit\" disabled=true>
         </form>";
         
-		if (!empty($_POST['status']) && !empty($_POST['currentFloor']) && !empty($_POST['requestedFloor'])) {
+
+
+		if (!empty($_POST['status']) && !empty($_POST['requestedFloor'])) {
             $conn->db->beginTransaction();
             try{            
+            $query = "SELECT (floorNumber) FROM carNode";
+            $currentFloor= $conn->db->query($query)->fetch()['floorNumber'];
+
             $query = 'INSERT INTO elevatorNetwork (date, time, status, currentFloor, requestedFloor, otherInfo)
                 VALUES(:date,:time,:status,:currentFloor,:requestedFloor,:otherInfo)';
             $statment = $conn->db->prepare($query);
@@ -94,8 +98,10 @@
             $curr_time_query = $conn->db->query('SELECT CURRENT_TIME()');
             $curr_time = $curr_time_query->fetch(PDO::FETCH_ASSOC);
             $status = $_POST['status'];
-            $currentFloor = $_POST['currentFloor'];
             $requestedFloor = $_POST['requestedFloor'];
+
+            $conn->db->exec("UPDATE carNode SET floorNumber = '$requestedFloor'");
+
             $params = [
                 'date' => $curr_date['CURRENT_DATE()'],
                 'time' => $curr_time['CURRENT_TIME()'],
@@ -122,20 +128,57 @@
     }
     ?>
 
-	<h3>Entire content of the elevatorNetwork table<h3>
+	
 	
 	<?php
-	if (isset($_SESSION['username'])) {
-	$rows = $conn->db->query('SELECT * FROM elevatorNetwork ORDER BY nodeID');
-	foreach ($rows as $row) {
-		for ($i = 0; $i < sizeof($row) / 2; $i++) {
-			echo $row[$i];
-			echo "  |  ";
-		}
-		echo "<br />";
-	}
-	}
-	?>
+
+    $query = "SELECT floorNumber FROM carNode";
+    $currentFloor= $conn->db->query($query)->fetch()['floorNumber'];
+    echo "<h2>The car is now on floor: $currentFloor</h2>";
+    
+
+    $query = "SELECT t1.nodeID, t1.info, t1.status, t2.floorNumber FROM elevatorNodes t1 LEFT JOIN carNode t2 ON t1.nodeID = t2.nodeID";
+
+    $infoRows = $conn->db->query($query);
+
+    echo "<h3>Elevator Info<h3>";
+    echo '<table style="border: 1px solid black;>"';
+
+    echo '<tr> <td style="border: 1px solid black;>"> nodeID </td> <td style="border: 1px solid black;>"> info </td> <td style="border: 1px solid black;>"> status </td> <td style="border: 1px solid black;>"> floorNumber </td> </tr>';
+
+    foreach ($infoRows as $row) {
+        echo '<tr>';
+        for ($i=0; $i < sizeof($row)/2 ; $i++) {
+            echo '<td style="border: 1px solid black;>">';
+            echo $row[$i];
+            echo '</td>';
+        }
+        echo '</tr>';
+    }
+    echo '</table>';
+
+
+    echo "<h3>Elevator Request History<h3>";
+    echo '<table style="border: 1px solid black;>"';
+    echo '<tr> <td style="border: 1px solid black;>"> date </td> <td style="border: 1px solid black;>"> time </td> <td style="border: 1px solid black;>"> requestID </td> <td style="border: 1px solid black;>"> status </td> <td style="border: 1px solid black;>"> currentFloor </td><td style="border: 1px solid black;>"> requestedFloor </td> <td style="border: 1px solid black;>"> otherInfo </td>  </tr>';
+    
+
+    if (isset($_SESSION['username'])) {
+        $rows = $conn->db->query('SELECT * FROM elevatorNetwork ORDER BY time DESC');
+        foreach ($rows as $row) {
+            for ($i = 0; $i < sizeof($row) / 2; $i++) {
+                echo '<td style="border: 1px solid black;>">';
+                echo $row[$i];
+                echo '</td>';
+            }
+            echo '</tr>';
+        }
+    }
+    echo '</table>';
+
+
+
+    ?>
 
 	<script src="js/memberInput.js"></script>
 	
