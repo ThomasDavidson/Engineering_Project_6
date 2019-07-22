@@ -1,0 +1,100 @@
+/* Fit Wiring Information Table */
+.table-wiring {
+    width: 5px;
+	margin-left:auto; 
+    margin-right:auto;
+}
+
+/* Bootstrap Modifications */
+/* Fix Image Orientation */
+img {
+    image-orientation: from-image;
+}
+
+/* Underline h2  */
+h2 {
+  text-decoration: underline;
+}
+
+/* Set the body background black */
+body {
+  background-color: black !important;
+}
+
+/* Set the container background black */
+.container-bg {
+  background-color: black !important; 
+}
+
+/* Set the navigation link colors to white */
+.nav-link {
+color: white !important;
+}
+
+
+.nav-link:hover {
+color: brown !important;
+}
+
+
+
+input:invalid {
+  box-shadow: 0 0 5px 1px red;
+}
+
+input:focus:invalid {
+  box-shadow: none;
+}
+
+/* The message box is shown when the user clicks on the password field */
+/* Source: https://www.w3schools.com/howto/howto_js_password_validation.asp */
+
+/* center the registration form */ 
+.center_div{
+    margin-left:auto; 
+    margin-right:auto;
+}
+
+/* center password checker */ 
+.password-checklist {
+	margin-left:auto; 
+    margin-right:auto;
+}
+
+.validCHECK {
+  color: green;
+}
+
+/* Show Checkmark Icon */ 
+.validCHECK:before {
+  position: relative;
+  left: -35px;
+  content: "GOOD ";
+}
+
+/* Add a red text color and an "x" icon when the requirements are wrong */
+.invalidCHECK {
+  color: red;
+}
+
+/* Show X Icon */
+
+.invalidCHECK:before {
+  position: relative;
+  left: -35px;
+  content: "BAD ";
+}
+
+/* Source: https://stackoverflow.com/questions/5614399/disabling-submit-button-until-all-fields-have-values */ 
+/* hide or enable submit button on login page */ 
+
+  input[type="submit"] {
+  color: #fff;
+  transition: background 600ms;
+  cursor: pointer;
+}
+
+input[type="submit"]:disabled {
+  background: #555;
+  cursor: not-allowed;
+}

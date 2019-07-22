@@ -106,6 +106,11 @@
 							<ul>
 								<li> Worked on Completing the Back-End Development of our website</li>
 							</ul>
+
+							<h2>Week 12</h2>
+							<ul>
+								<li> Worked on Completing Q2-5 on Software Assigntment #2</li>
+							</ul>
 							<a class="top-link" href="logbook_damian.php">Top of Page</a>
 						</div>
 
