@@ -28,6 +28,7 @@
 		if(null != $_SESSION && $_SESSION['username'] == 'Bob')
 			{
 				require 'admintools.html';
+				
 			}
 	?>
 
