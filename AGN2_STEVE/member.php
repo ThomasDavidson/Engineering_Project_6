@@ -164,22 +164,60 @@
 		}
 	?>
 	
-	<br>
+	<br />
+
 	
 	<?php
-	echo"<h2>Log Data<h2>";
+	echo"<h2>Diagnostic Information<h2>";
+	
 	
 	if (isset($_SESSION['username'])) {
 		
-		$rows = $conn->db->query('SELECT * FROM elevatorLog ORDER BY time');
+		// Count the # of times the status field changed for each nodeID 
+		$rows = $conn->db->query('SELECT logTime, logNodeID, COUNT(*) AS hits FROM elevatorLog GROUP BY logTime');
+			
+		echo "<br />";
+	
+		echo "<table border='1'>";
 		
+		echo "<td>Time</td> ";
+		
+		echo "<td>nodeID</td> ";
+
+		echo "<td># of hits</td> ";
+
+		echo "<tr> </tr> ";
+
 		foreach ($rows as $row) {
 			for ($i = 0; $i < sizeof($row) / 2; $i++) {
-				echo $row[$i];
-				echo "  |  ";
+				echo "<td>" . $row[$i] . "</td>";
 			}
-			echo "<br />";
+				echo "<tr> </tr>";
 		}
+		
+	echo "</table>";
+
+	echo "<br />";
+
+	echo "<table border='1'>";
+	
+	echo "<td>Time</td> ";
+	
+	echo "<td>Status ID</td> ";
+
+	echo "<tr> </tr> ";
+		
+	// Show the Status Information
+	$rows = $conn->db->query('SELECT logTime, logStatus FROM elevatorLog');
+		
+	foreach ($rows as $row) {
+			for ($i = 0; $i < sizeof($row) / 2; $i++) {
+				echo "<td>" . $row[$i] . "</td>";
+			}
+			echo "<tr> </tr>";
+		}
+		echo "</table>";	
+		
 	}
 	
 	echo "<br />";
