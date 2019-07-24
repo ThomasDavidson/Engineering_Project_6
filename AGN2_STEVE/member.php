@@ -134,14 +134,35 @@
 					throw new Exception("Error - exeption thrown in try block");
 				}
 				$conn->db->commit();
+					
         }
         catch (Exception $e){
             $conn->db->rollBack();
         }
-            // echo "<br />";
-            // $error = $conn->db->errorInfo()[2];
-            // var_dump($error);
-            // echo "<br />";
+			
+			// Copy the NodeID, Status, Requested Floor into elevatorLog
+			
+		    $conn->db->beginTransaction();
+			
+			try {
+				$query = ('SELECT t1.nodeID, t1.status, t1.requestedFloor, t2.lognodeID, t2.logStatus, t2.logFloor
+				           FROM elevatorNetwork t1 LEFT JOIN elevatorLog t2 ON t1.nodeID = t2.lognodeID');
+				
+				$query->execute();
+			
+				if (!$statement->execute()) {
+                throw new Exception("Error - exeption thrown in try block");
+            }
+			
+				$conn->db->commit();
+	
+			}
+			
+			catch (Exception $e){
+			echo "Left Join Failed";
+            $conn->db->rollBack();
+			}
+			
         }
         
     }
@@ -149,6 +170,8 @@
 
 	<br />
 
+
+		
 	<?php
 	echo"<h2>Entire content of the elevatorNetwork table</h2>";
 	
@@ -165,6 +188,7 @@
 	?>
 	
 	<br />
+
 
 	
 	<?php
