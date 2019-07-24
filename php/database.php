@@ -1,16 +1,16 @@
 <?php
-
  class database
  {
     public $host;
-    public $dbname;
+	public $dbname;
     public $username;
     public $password;
     public $db;
-
-    public function dbConnect(){
+    
+	public function dbConnect(){
         $dsn = "mysql:host=".$this->host.";dbname=".$this->dbname;
-        
+
+		try {
         $this->db = new PDO(
             $dsn,
             $this->username,
@@ -18,11 +18,21 @@
         );
         
         $this->db->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_BOTH);
-
-        return $this->db;
-    }
-
-    public function __construct(string $host, string $dbname, string $username, string $password)
+        
+		return $this->db;
+		
+		}
+		
+		catch (PDOException $e) {
+        
+		echo 'PDO Connection failed: ' . $e->getMessage().'. ';	
+		
+		}
+		
+	}
+    
+	
+	public function __construct(string $host, string $dbname, string $username, string $password)
     {
         $this->host = $host;
         $this->dbname = $dbname;
@@ -30,5 +40,4 @@
         $this->password = $password;   
     }
  }
-
 ?>
