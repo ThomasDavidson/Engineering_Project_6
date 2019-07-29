@@ -1,7 +1,14 @@
 <?php
+	include 'database.php';
+
+	session_start();
+	
 	$username = $_SESSION['username'];
 	$newpassword = $_POST['newPassword'];
-
+	
+	// connect to MySQL server		 
+	$conn = new database('127.0.0.1', 'elevator', 'root', '');
+    $conn->dbConnect();
 		
 
 	// Try updating password
@@ -21,7 +28,9 @@
 			
 			// Begin a transaction
 			$conn->db->beginTransaction();
-				
+	
+			echo "Username Found";
+			
 			$query = 'UPDATE authorizedUsers
 					  SET Password = :Password
 					  WHERE Username = :Username';
@@ -38,6 +47,11 @@
 			// Commit the transaction
             $conn->db->commit();			
 			echo "<p>Updated Password</p>" ;
+			echo "<p>Log Backin</p>";
+			
+			// Destroy login information
+			session_destroy();
+			
 			} 
 			
 			
