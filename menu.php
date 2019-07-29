@@ -25,10 +25,10 @@
 	<!-- Secret member lounge -->
 	<?php 
 		session_start();
-		if(null != $_SESSION && $_SESSION['username'] == 'Bob')
+		if (isset($_SESSION['username']))
 			{
 				require 'admintools.html';
-				
+
 			}
 	?>
 
