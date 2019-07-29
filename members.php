@@ -153,7 +153,7 @@
                     echo '</tr>';
                 }
                 echo '</table>';
-
+0
 
                 echo "<h2>Elevator Request History<h2>";
                 echo '<table style="border: 1px solid black;>"';
