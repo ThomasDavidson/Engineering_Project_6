@@ -80,7 +80,7 @@
 						echo "<p>Congraulations, you are now logged into the site.</p>";
 						echo "<p>Please click <a href=\"members.php\">here</a></p>";
 						
-						header("Location: members.php");
+						header("Location: index.php");
 						die();
 					}
 				} else {
