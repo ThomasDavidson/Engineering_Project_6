@@ -63,7 +63,10 @@
 
 				<form id="changePassword" action="changePassword.php" method="post">
 
-					<label for="newPassword">New Password: <abbr title="This field is mandatory">*</abbr></label>
+                    <label for="username">Username</label>                      
+                    <input type="text" name="username" id="username" require>
+
+                    <label for="newPassword">New Password: <abbr title="This field is mandatory">*</abbr></label>
 					<input type="password" id="newPassword" name="newPassword" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
 
 					<p>Password must contain the following:</p>
@@ -72,13 +75,13 @@
 					<p id="numberPSWD" class="invalidPSWD">A <b>number</b></p>
 					<p id="lengthPSWD" class="invalidPSWD">Minimum <b>8 characters</b></p>
 
-					<button>Change Password</button>
+					<button>Add User</button>
 
 				</form>
 
 				<?php
 				if (isset($_SESSION['username'])) {
-					if (!empty($_POST['newPassword'])){
+					if (!empty($_POST['newPassword']) || !empty($_POST['username'])){
 						include 'php/database.php';
 						$conn = new database('127.0.0.1', 'elevator', 'root', '');
 						$conn->dbConnect();
@@ -100,15 +103,15 @@
 							
 							$query->execute();
 							
-							// Username is found - update the password
-								if($query->rowCount() != 0){
+							// If the Username does not exist make user
+								if($query->rowCount() == 0){
 								
 								// Begin a transaction
 								$conn->db->beginTransaction();
 									
-								$query = 'UPDATE authorizedUsers
-										  SET Password = :Password
-										  WHERE Username = :Username';
+                                $query = 'INSERT INTO authorizedUsers VALUES ( username, password)
+                                          VALUES ( :username, :password)
+                                ';
 										  
 								$statement = $conn->db->prepare($query);
 					
@@ -121,12 +124,12 @@
 								
 								// Commit the transaction
 								$conn->db->commit();			
-								echo "<p>Updated Password</p>" ;
+								echo "<p>Added User</p>" ;
 								} 
 								
 								
 								else { 
-									echo "Username Not Found";
+									echo "User Already Exists";
 									
 									// Rollback the transaction
 									$conn->db->rollBack();
@@ -135,7 +138,7 @@
 						
 						// Recognize mistake and roll back changes
 						catch (Exception $e){
-							echo"<p>Failed to update password</p>";
+							echo"<p>Failed to Add User</p>";
 							
 							$conn->db->rollBack();
 						}

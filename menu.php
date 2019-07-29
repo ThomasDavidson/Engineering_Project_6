@@ -14,24 +14,6 @@
 		<a class="nav-link" href="documentation.php">Documentation</a>
 	</li>
 
-	<li class="nav-item">
-		<a class="nav-link" href="registration.php">Register</a>
-	</li>
-
-	<li class="nav-item">
-		<a class="nav-link" href="form.php">Sign In</a>
-	</li>
-
-	<!-- Secret member lounge -->
-	<?php 
-		session_start();
-		if (isset($_SESSION['username']))
-			{
-				require 'admintools.html';
-
-			}
-	?>
-
 	<!-- Drop Down Menu -->
 	<li class="nav-item dropdown ml-md-left">
 		 <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown">Logbooks</a>
@@ -43,4 +25,29 @@
 
 		</div>
 	</li>
+
+
+	<li class="nav-item">
+		<a class="nav-link" href="registration.php">Register</a>
+	</li>
+
+
+	<!-- Secret member lounge -->
+	<?php 
+		session_start();
+		if (isset($_SESSION['username']))
+			{
+				require 'admintools.html';
+				echo "	<li class=\"nav-item\">
+				<a class=\"nav-link\" href=\"logout.php\">Logout</a>
+				</li>";
+		
+
+			}else {
+				echo "	<li class=\"nav-item\">
+					<a class=\"nav-link\" href=\"form.php\">Sign In</a>
+					</li>";
+			}
+	?>
+
 </ul>

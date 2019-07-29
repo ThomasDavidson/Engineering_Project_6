@@ -79,6 +79,9 @@
 						$_SESSION['username'] = $username;
 						echo "<p>Congraulations, you are now logged into the site.</p>";
 						echo "<p>Please click <a href=\"members.php\">here</a></p>";
+						
+						header("Location: members.php");
+						die();
 					}
 				} else {
 					echo "<p>Authentication failed  </p>";
