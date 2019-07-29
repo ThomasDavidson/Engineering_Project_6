@@ -74,7 +74,7 @@
 				$query = "SELECT * FROM authorizedUsers WHERE username='$username' AND password='$password'";
 				$rows = $conn->db->query($query);
 				$user = $rows->fetch();
-				if ($rows->rowCount() == 1) {
+				if ($rows->rowCount() == 2) {
 					if (($user['username'] == $username) && ($user['password'] == $password)) {
 						$_SESSION['username'] = $username;
 						echo "<p>Congraulations, you are now logged into the site.</p>";
