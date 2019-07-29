@@ -180,7 +180,11 @@
                 echo '</table>';
 
 
+<<<<<<< HEAD
                 echo "<h2>Elevator Request History<h2>";
+=======
+                echo "<h3>Elevator Request History<h3>";
+>>>>>>> master
                 echo '<table style="border: 1px solid black;>"';
                 echo '<tr> <td style="border: 1px solid black;>"> date </td> <td style="border: 1px solid black;>"> time </td> <td style="border: 1px solid black;>"> requestID </td> <td style="border: 1px solid black;>"> status </td> <td style="border: 1px solid black;>"> currentFloor </td><td style="border: 1px solid black;>"> requestedFloor </td> <td style="border: 1px solid black;>"> otherInfo </td>  </tr>';
 
