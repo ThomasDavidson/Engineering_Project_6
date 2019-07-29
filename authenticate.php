@@ -77,9 +77,11 @@
 				if ($rows->rowCount() == 2) {
 					if (($user['username'] == $username) && ($user['password'] == $password)) {
 						$_SESSION['username'] = $username;
-						$_SESSION['loginkey'] = 
 						echo "<p>Congraulations, you are now logged into the site.</p>";
 						echo "<p>Please click <a href=\"members.php\">here</a></p>";
+						
+						header("Location: members.php");
+						die();
 					}
 				} else {
 					echo "<p>Authentication failed  </p>";

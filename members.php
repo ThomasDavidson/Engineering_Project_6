@@ -72,31 +72,6 @@
                 }
                 ?>
 
-                <h2>Change User Password</h2>
-
-                <form id="changePassword" action="members.php" method="post">
-
-                    <label for="newPassword">New Password: <abbr title="This field is mandatory">*</abbr></label>
-                    <input type="password" id="newPassword" name="newPassword" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
-
-                    <p>Password must contain the following:</p>
-                    <p id="letterPSWD" class="invalidPSWD">A <b>lowercase</b> letter</p>
-                    <p id="capitalPSWD" class="invalidPSWD">A <b>capital (uppercase)</b> letter</p>
-                    <p id="numberPSWD" class="invalidPSWD">A <b>number</b></p>
-                    <p id="lengthPSWD" class="invalidPSWD">Minimum <b>8 characters</b></p>
-
-                    <button>Change Password</button>
-
-                </form>
-
-                <?php
-                    if (!empty($_POST['newPassword'])){
-                        include('changePassword.php');
-                    }
-                ?>
-
-                <script src="js/ValidatePassword.js"></script>
-
                 <br />
 
                 <?php
@@ -180,7 +155,7 @@
                 echo '</table>';
 
 
-                echo "<h3>Elevator Request History<h3>";
+                echo "<h2>Elevator Request History<h2>";
                 echo '<table style="border: 1px solid black;>"';
                 echo '<tr> <td style="border: 1px solid black;>"> date </td> <td style="border: 1px solid black;>"> time </td> <td style="border: 1px solid black;>"> requestID </td> <td style="border: 1px solid black;>"> status </td> <td style="border: 1px solid black;>"> currentFloor </td><td style="border: 1px solid black;>"> requestedFloor </td> <td style="border: 1px solid black;>"> otherInfo </td>  </tr>';
 
