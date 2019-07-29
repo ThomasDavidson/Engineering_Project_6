@@ -1,31 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Control Panel</title>
-        <link rel="stylesheet" type="text/css" href="css/controller.css">
-        <div style background-image url(Images/logo.jpg); </div>
-    </head>
-
-    <body>
+       <body>
         <div id="current" > Current Floor </div> 
         <div id="floor"> First Floor </div>
         <div id="floor"> Second Floor </div>
         <div id="floor"> Third Floor </div>
     </body>
-
-</html>
-
-<html> 
- <title>Quiz 2</title>
- <body>
- <h1>Welcome to the Members only page</h1>
- 
-
-<form action= "?" method="post" id="floor"> 
+    <form action= "?" method="post" id="floor"> 
     <p>Enter a floor number to send the elevator to 
         <input type="number" name="floor" min="1" max="3"/>
         <input type="submit" value="Send It"/>
     </p>
+</html>
+
+
+ 
+
+
 
 <?php
 
