@@ -11,7 +11,7 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	
 	<!-- Link Custom CSS -->
-	<link rel="stylesheet" type="text/css" href = "../css/style.css">
+	<link rel="stylesheet" type="text/css" href = "css/style.css">
 	
 	<!-- Link JS -->
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -44,7 +44,7 @@
 
 			<!-- Load the Navigation Bar wit hPHP include function --> 
 					<?php 
-					include('menu.php');
+					include('include/menu.php');
 					?>
 						
 				</div>
@@ -97,7 +97,7 @@
 						<!-- Load news.php -->
 						
 									<?php 
-									include('news.php');
+									include('include/news.php');
 									?>
 						
 									</div>
@@ -111,7 +111,7 @@
 									<!-- Load links.php -->
 						
 									<?php 
-									include('links.php');
+									include('include/links.php');
 									?>
 									
 						</div>

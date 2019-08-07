@@ -48,7 +48,7 @@
 
 					<!-- Load the Navigation Bar wit hPHP include function -->
 					<?php
-					include('menu.php');
+					include('include/menu.php');
 					?>
 
 				</div>
@@ -82,7 +82,7 @@
 				<?php
 				if (isset($_SESSION['username'])) {
 					if (!empty($_POST['newPassword']) || !empty($_POST['username'])){
-						include 'php/database.php';
+						include('include/database.php');
 						$conn = new database('127.0.0.1', 'elevator', 'root', '');
 						$conn->dbConnect();
 
@@ -160,7 +160,7 @@
 							<!-- Load news.php -->
 
 							<?php
-							include('news.php');
+							include('include/news.php');
 							?>
 
 						</div>
@@ -174,7 +174,7 @@
 							<!-- Load links.php -->
 
 							<?php
-							include('links.php');
+							include('include/links.php');
 							?>
 
 						</div>

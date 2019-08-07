@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
     <!-- Link Custom CSS -->
-    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 
     <!-- Link JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -47,7 +47,7 @@
 
                     <!-- Load the Navigation Bar wit hPHP include function -->
                     <?php
-                    include('menu.php');
+                    include('include/menu.php');
                     ?>
 
                 </div>
@@ -60,11 +60,11 @@
 
                 <?php
                 //member.php
-                include 'php/database.php';
+                include('include/database.php');
                 session_start();
                 if (isset($_SESSION['username'])) {
                     echo "Welcome, " . $_SESSION['username'] . "!<br /b>";
-                    $conn = new database('192.168.0.200', 'elevator', 'root', '3Yn4$zT&');
+                    $conn = new database('127.0.0.1', 'elevator', 'root', '');
                     $conn->dbConnect();
                     echo "<p>Click here to <a href=\"logout.php\">Logout</a></p>";
                 } else {
@@ -129,7 +129,7 @@
 
                 <?php
 
-                $query = "SELECT floorNumber FROM carNode";
+                $query = "SELECT floorNu    mber FROM carNode";
                 $currentFloor = $conn->db->query($query)->fetch()['floorNumber'];
                 echo "<h2>The car is now on floor: $currentFloor</h2>";
 

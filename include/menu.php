@@ -7,7 +7,7 @@
 	</li>
 
 	<li class="nav-item">
-		<a class="nav-link" href="html/Project_details.html">Project Details</a>
+		<a class="nav-link" href="projectDetails.html">Project Details</a>
 	</li>
 	
 	<li class="nav-item">
@@ -37,7 +37,7 @@
 		session_start();
 		if (isset($_SESSION['username']))
 			{
-				require 'admintools.html';
+				require 'include/admintools.html';
 				echo "	<li class=\"nav-item\">
 				<a class=\"nav-link\" href=\"logout.php\">Logout</a>
 				</li>";

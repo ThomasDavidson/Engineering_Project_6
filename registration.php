@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">  
 	
 	<!-- Link Custom CSS -->
-    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="../css/Registration_style.css">
 	
 	<!-- Link JS -->
@@ -48,7 +48,7 @@
 
 			<!-- Load the Navigation Bar wit hPHP include function --> 
 					<?php 
-					include('menu.php');
+					include('include/menu.php');
 					?>
 						
 				</div>
@@ -119,7 +119,7 @@
 						<!-- Load news.php -->
 						
 									<?php 
-									include('news.php');
+									include('include/news.php');
 									?>
 						
 									</div>
@@ -133,7 +133,7 @@
 						<!-- Load links.php -->
 						
 									<?php 
-									include('links.php');
+									include('include/links.php');
 									?>
 						
 								</div>
