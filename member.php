@@ -188,8 +188,6 @@
 	?>
 	
 	<br />
-
-
 	
 	<?php
 	echo"<h2>Diagnostic Information<h2>";
