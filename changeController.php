@@ -2,6 +2,9 @@
 
 	include 'php/database.php';
 	
+	session_start();
+
+
 	//connects to db
 	$conn = new database('192.168.0.200', 'elevator', 'root', '3Yn4$zT&');
 	$conn->dbConnect();
@@ -9,8 +12,8 @@
 	// user floor number
 	$changeFloorNumber = $_SESSION['floorNumber'];
 
-
 	try { 
+		echo"<p>Going to<p>"$changeFloorNumber;
 		
 		// Begin a transaction
 		$conn->db->beginTransaction();
