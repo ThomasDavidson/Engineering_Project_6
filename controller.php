@@ -21,7 +21,7 @@
 	// tell user what floor it's on 
 	if (isset($_SESSION['username'])) { 
 	
-		$current = $db->query("Select currentFloor FROM elevatorNetwork");
+		$current = $conn->db->query("Select currentFloor FROM elevatorNetwork");
 		
 		echo "The car is now on floor: ".$_POST["current"];
 		echo "<br />";
