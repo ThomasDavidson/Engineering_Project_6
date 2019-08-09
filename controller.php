@@ -20,9 +20,9 @@
 	// tell user what floor it's on 
 	
 		$current = $conn->db->query("SELECT currentFloor FROM elevatorNetwork WHERE nodeID = 1");
-		
+		$val = $current->fetch();
 		echo "The car is now on floor:";
-		echo $current['currentFloor'];
+		echo $val['currentFloor'];
 		echo "<br />";
 		
 	
