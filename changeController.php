@@ -12,15 +12,12 @@
 	// user floor number
 	$changeFloorNumber = $_SESSION['floorNumber'];
 
-	try { 
-		echo"<p>Going to <p>" $changeFloorNumber ;
-		
+	try { 	
 		// Begin a transaction
 		$conn->db->beginTransaction();
 		
 	    // prepare query 
-		$query = 'INSERT INTO elevatorNetwork (currentFloor)
-					VALUES(:changeFloorNumber)';
+		$query = 'UPDATE elevatorNetwork SET currentFloor = :changeFloorNumber';
 		
 		// run query 
 		$statement = $conn->db->prepare($query);
