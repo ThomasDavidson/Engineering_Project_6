@@ -6,7 +6,7 @@
 
 
 	//connects to db
-	$conn = new database('127.0.0.1', 'elevator', 'root', '3Yn4$zT&');
+	$conn = new database('127.0.0.1', 'elevator', 'ese', 'ese');
 	$conn->dbConnect();
 	
 	// user floor number
