@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">  
 	
 	<!-- Link Custom CSS -->
-	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 	
 	<!-- Link JS -->
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -31,7 +31,7 @@
 				<div class="col-md-12">
 					<div class="page-header">
 						<br>
-						<h1 class="text-light"><img src="../images/CC_logo.jpg" alt="Conestoga College Logo" height="60" wide="60"> Engineering Project 6</h1>
+						<h1 class="text-light"><img src="Images/CC_logo.jpg" alt="Conestoga College Logo" height="60" wide="60"> Engineering Project 6</h1>
 						<h5 class="text-light">By: Thomas, Damian, Robert & Steve</h5>
 					</div>
 					</div>
@@ -43,7 +43,7 @@
 
 			<!-- Load the Navigation Bar wit hPHP include function --> 
 					<?php 
-					include('menu.php');
+					include('include/menu.php');
 					?>
 						
 				</div>
@@ -55,7 +55,7 @@
         <!-- Main Section --> 
             <div class="col-md-10" style='background-color: white'>	
             <h1>About us</h1>
-            <img src="../images/team photo.jpg" alt= "team photo">
+            <img src="Images/team_photo.jpg" alt= "team photo">
             <div>Our group consists of 4 members: Robert, Damian, Stephan and Thomas. Our mascot is Haron and our website features him.</div>
  
             <div>Bellow is a map of our school </div>
@@ -71,7 +71,7 @@
 							
 		<!-- Load news.php -->
 						
-			<?php include('news.php');?>
+			<?php include('include/news.php');?>
 						
 			</div>
 			</div>
@@ -84,7 +84,7 @@
 								<!-- Load links.php -->
 						
 									<?php 
-									include('../php/links.php');
+									include('include/links.php');
 									?>
 								</div>
 								

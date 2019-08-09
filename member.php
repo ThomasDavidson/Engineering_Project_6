@@ -8,7 +8,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">  
 	
 	<!-- Link Custom CSS -->
-    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 	
 	<!-- Link JS -->
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -34,7 +34,7 @@
 				<div class="col-md-12">
 					<div class="page-header">
 						<br>
-						<h1 class="text-light"><img src="../Images/CC_logo.jpg" alt="Conestoga College Logo" height="60" wide="60"> Engineering Project 6</h1>
+						<h1 class="text-light"><img src="Images/CC_logo.jpg" alt="Conestoga College Logo" height="60" wide="60"> Engineering Project 6</h1>
 						<h5 class="text-light">By: Thomas, Damian, Robert & Steve</h5>
 					</div>
 				</div>
@@ -46,7 +46,7 @@
 
 			<!-- Load the Navigation Bar wit hPHP include function --> 
 					<?php 
-					include('menu.php');
+					include('include/menu.php');
 					?>
 						
 				</div>
@@ -76,7 +76,7 @@
 
 	<h2>Change User Password</h2>
 		
-		<form id="changePassword" action="../changePassword.php" method="post">		
+		<form id="changePassword" action="changePassword.php" method="post">		
 		
 		  <label for="newPassword">New Password: <abbr title="This field is mandatory">*</abbr></label>
 		  <input type="password" id="newPassword" name="newPassword" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
@@ -253,7 +253,7 @@
 		<div class="row">
 			<div class="col-md-12 text-center">
                             <footer class="text-light" id='footer'></footer>
-							<script src="../js/DateObjectModel.js"></script>
+							<script src="js/DateObjectModel.js"></script>
                             </div>
                         </div>
                      </div>

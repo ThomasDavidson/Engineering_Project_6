@@ -36,7 +36,7 @@
 				<div class="col-md-12">
 					<div class="page-header">
 						<br>
-						<h1 class="text-light"><img src="../Images/CC_logo.jpg" alt="Conestoga College Logo" height="60" wide="60"> Engineering Project 6</h1>
+						<h1 class="text-light"><img src="Images/CC_logo.jpg" alt="Conestoga College Logo" height="60" wide="60"> Engineering Project 6</h1>
 						<h5 class="text-light">By: Thomas, Damian, Robert & Steve</h5>
 					</div>
 				</div>
@@ -48,7 +48,7 @@
 
 					<!-- Load the Navigation Bar wit hPHP include function -->
 					<?php
-					include('menu.php');
+					include('include/menu.php');
 					?>
 
 				</div>
@@ -79,7 +79,7 @@
 				<?php
 				if (isset($_SESSION['username'])) {
 					if (!empty($_POST['newPassword'])){
-						include 'php/database.php';
+						include('include/database.php');
 						$conn = new database('127.0.0.1', 'elevator', 'root', '');
 						$conn->dbConnect();
 
@@ -157,7 +157,7 @@
 							<!-- Load news.php -->
 
 							<?php
-							include('news.php');
+							include('include/news.php');
 							?>
 
 						</div>
@@ -171,7 +171,7 @@
 							<!-- Load links.php -->
 
 							<?php
-							include('links.php');
+							include('include/links.php');
 							?>
 
 						</div>

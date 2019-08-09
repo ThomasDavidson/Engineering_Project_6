@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	
 	<!-- Link Custom CSS -->
-	<link rel="stylesheet" type="text/css" href = "../css/style.css">
+	<link rel="stylesheet" type="text/css" href = "css/style.css">
 	
 	<!-- Link JS -->
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -29,7 +29,7 @@
 					<div class="page-header">
 						<br>
 						<a href ="https://www.conestogac.on.ca/" >
-						<h1 class="text-light"><img src="../Images/CC_logo.jpg" alt="Conestoga College Logo" height="60" wide="60"> Engineering Project 6</h1>
+						<h1 class="text-light"><img src="Images/CC_logo.jpg" alt="Conestoga College Logo" height="60" wide="60"> Engineering Project 6</h1>
 							</a>
 					</div>
 					</div>
@@ -41,7 +41,7 @@
 
 			<!-- Load the Navigation Bar wit hPHP include function --> 
 					<?php 
-					include('menu.php');
+					include('include/menu.php');
 					?>
 						
 				</div>
@@ -56,7 +56,7 @@
 							<br>
 							
 							<figure>
-							<img src="../Images/Robert.jpg" alt="image of Robert"	title="Robert" width="200px" />
+							<img src="Images/Robert.jpg" alt="image of Robert"	title="Robert" width="200px" />
 							</figure>
 							
 							<br>
@@ -106,7 +106,7 @@
 						<!-- Load news.php -->
 						
 									<?php 
-									include('news.php');
+									include('include/news.php');
 									?>
 						
 									</div>
@@ -117,7 +117,7 @@
 								<div class="col-md-12" style='background-color: 0x55'>
 								<h1>Useful Links</h1>
 					<?php 
-					include('links.php');
+					include('include/links.php');
 					?>
 							</div>
 						</div>
@@ -129,7 +129,7 @@
 							<div class="container-bg">
 							<!-- Footer Code with start year -->
 							<footer class="text-light text-center" id='foot'></footer>
-							<script src="../js/DateObjectModelR.js"></script>
+							<script src="js/DateObjectModelR.js"></script>
 							</div>
 						</div>			
 						</div>

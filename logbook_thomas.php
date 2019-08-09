@@ -11,7 +11,7 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	
 	<!-- Link Custom CSS -->
-	<link rel="stylesheet" type="text/css" href = "../css/style.css">
+	<link rel="stylesheet" type="text/css" href = "css/style.css">
 	
 	<!-- Link JS -->
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -32,7 +32,7 @@
 				<div class="col-md-12">
 					<div class="page-header">
 						<br>
-						<h1 class="text-light"><img src="../Images/CC_logo.jpg" alt="Conestoga College Logo" height="60" wide="60"> Engineering Project 6</h1>
+						<h1 class="text-light"><img src="Images/CC_logo.jpg" alt="Conestoga College Logo" height="60" wide="60"> Engineering Project 6</h1>
 						<h5 class="text-light">By: Thomas, Damien, Robert & Steve</h5>
 					</div>
 					</div>
@@ -44,7 +44,7 @@
 
 			<!-- Load the Navigation Bar wit hPHP include function --> 
 					<?php 
-					include('menu.php');
+					include('include/menu.php');
 					?>
 						
 				</div>
@@ -97,7 +97,7 @@
 						<!-- Load news.php -->
 						
 									<?php 
-									include('news.php');
+									include('include/news.php');
 									?>
 						
 									</div>
@@ -111,7 +111,7 @@
 									<!-- Load links.php -->
 						
 									<?php 
-									include('links.php');
+									include('include/links.php');
 									?>
 									
 						</div>
@@ -124,7 +124,7 @@
 							<!-- Footer Code with start year -->
 							
 							<footer class="text-light text-center" id='foot'></footer>
-							<script src="../js/DateObjectModelT.js"></script>
+							<script src="js/DateObjectModelT.js"></script>
 							
 							</div>
 						</div>			

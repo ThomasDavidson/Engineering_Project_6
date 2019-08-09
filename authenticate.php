@@ -8,7 +8,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">  
 	
 	<!-- Link Custom CSS -->
-    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 	
 	<!-- Link JS -->
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -38,7 +38,7 @@
 				<div class="col-md-12">
 					<div class="page-header">
 						<br>
-						<h1 class="text-light"><img src="../Images/CC_logo.jpg" alt="Conestoga College Logo" height="60" wide="60"> Engineering Project 6</h1>
+						<h1 class="text-light"><img src="Images/CC_logo.jpg" alt="Conestoga College Logo" height="60" wide="60"> Engineering Project 6</h1>
 						<h5 class="text-light">By: Thomas, Damian, Robert & Steve</h5>
 					</div>
 				</div>
@@ -50,7 +50,7 @@
 
 			<!-- Load the Navigation Bar wit hPHP include function --> 
 					<?php 
-					include('menu.php');
+					include('include/menu.php');
 					?>
 						
 				</div>
@@ -62,14 +62,14 @@
      <h1 class="text-muted">Authentication Page</h1>
 	
 		<?php 
-			include 'php/database.php';
+			include 'include/database.php';
 			$username =  $_POST['username'];
 			$password = $_POST['password'];
 			echo "<p>Username: $username</p>";
 			echo "<p>Password: $password</p>";
 			if ($username && $password) {
 				//connects to database
-				$conn = new database('192.168.0.200', 'elevator', 'root', '3Yn4$zT&');
+				$conn = new database('127.0.0.1', 'elevator', 'root', '');
 				$conn->dbConnect();
 				$query = "SELECT * FROM authorizedUsers WHERE username='$username' AND password='$password'";
 				$rows = $conn->db->query($query);

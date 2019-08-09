@@ -43,7 +43,7 @@
 
 			<!-- Load the Navigation Bar wit hPHP include function --> 
 					<?php 
-					include('menu.php');
+					include('include/menu.php');
 					?>
 						
 				</div>
@@ -109,7 +109,7 @@
 						<!-- Load news.php -->
 						
 									<?php 
-									include('php/news.php');
+									include('include/news.php');
 									?>
 						
 									</div>
