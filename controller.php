@@ -70,6 +70,8 @@
 	// tell user what floor it's on 
 	if (isset($_SESSION['username'])) { 
 	
+		echo "Getting the floor number" ;
+
 		$current = $db->query("Select currentFloor FROM elevatorNetwork");
 		
 		echo "The car is now on floor: ".$_POST["current"];
@@ -79,19 +81,18 @@
 	
 	else { 
 	
-	echo "Username Not Found";
+		echo "Username Not Found";
 	
 	}
 	
 	?>
 	
-		
     <form action= "changeController.php" method="post" id="floor"> 
+	
     <p>Enter a floor number to send the elevator to 
         <input type="number" name="floorNumber" min="1" max="3"/>
         <input type="submit" value="Send It"/>
     </p>
-	
 	
 	</div>
        
