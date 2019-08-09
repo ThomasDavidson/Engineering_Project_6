@@ -56,7 +56,7 @@
 							<br>
 							
 							<figure>
-							<img src="Images/Robert.jpg" alt="image of Robert"	title="Robert" width="200px" />
+							<img src="Images/robert.jpg" alt="image of Robert"	title="Robert" width="200px" />
 							</figure>
 							
 							<br>
