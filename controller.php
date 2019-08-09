@@ -21,7 +21,7 @@
 	
 		$current = $conn->db->query("SELECT currentFloor FROM elevatorNetwork WHERE nodeID = 1");
 		
-		echo "The car is now on floor: ".$_POST["current"];
+		echo "The car is now on floor: ".$current;
 		
 		echo "<br />";
 		
