@@ -15,7 +15,8 @@
 		$conn->db->beginTransaction();
 		
 	    // prepare query 
-		$query = 'UPDATE elevatorNetwork SET currentFloor = :changeFloorNumber';
+		$query = 'UPDATE elevatorNetwork SET currentFloor = :changeFloorNumber
+				  WHERE nodeID = 1';
 		
 		// run query 
 		$statement = $conn->db->prepare($query);
