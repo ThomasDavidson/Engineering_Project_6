@@ -21,7 +21,6 @@
 		// run query 
 		$statement = $conn->db->prepare($query);
 					
-	
 		echo"<p>Successfully changed floor number</p>";
 
 	}

@@ -8,7 +8,7 @@
 	$conn->dbConnect();
 
 	// tell user what floor it's on 
-    $current = $db->query("Select floorNumber FROM carNode");
+    $current = $db->query("Select currentFloor FROM elevatorNetwork");
     echo "The car is now on floor: ".$_POST["floor"];
     echo "<br />";
 	
