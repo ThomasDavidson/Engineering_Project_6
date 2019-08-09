@@ -35,7 +35,7 @@
                 <div class="col-md-12">
                     <div class="page-header">
                         <br>
-                        <h1 class="text-light"><img src="../Images/CC_logo.jpg" alt="Conestoga College Logo" height="60" wide="60"> Engineering Project 6</h1>
+                        <h1 class="text-light"><img src="Images/CC_logo.jpg" alt="Conestoga College Logo" height="60" wide="60"> Engineering Project 6</h1>
                         <h5 class="text-light">By: Thomas, Damian, Robert & Steve</h5>
                     </div>
                 </div>
@@ -64,7 +64,7 @@
                 session_start();
                 if (isset($_SESSION['username'])) {
                     echo "Welcome, " . $_SESSION['username'] . "!<br /b>";
-                    $conn = new database('127.0.0.1', 'elevator', 'root', '');
+                    $conn = new database('192.168.0.200', 'elevator', 'root', '3Yn4$zT&');
                     $conn->dbConnect();
                     echo "<p>Click here to <a href=\"logout.php\">Logout</a></p>";
                 } else {
@@ -150,7 +150,7 @@
                     echo '</tr>';
                 }
                 echo '</table>';
-0
+
 
                 echo "<h2>Elevator Request History<h2>";
                 echo '<table style="border: 1px solid black;>"';
@@ -211,7 +211,7 @@
             <div class="row">
                 <div class="col-md-12 text-center">
                     <footer class="text-light" id='footer'></footer>
-                    <script src="../js/DateObjectModel.js"></script>
+                    <script src="js/DateObjectModel.js"></script>
                 </div>
             </div>
         </div>

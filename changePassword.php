@@ -36,7 +36,7 @@
 				<div class="col-md-12">
 					<div class="page-header">
 						<br>
-						<h1 class="text-light"><img src="../Images/CC_logo.jpg" alt="Conestoga College Logo" height="60" wide="60"> Engineering Project 6</h1>
+						<h1 class="text-light"><img src="Images/CC_logo.jpg" alt="Conestoga College Logo" height="60" wide="60"> Engineering Project 6</h1>
 						<h5 class="text-light">By: Thomas, Damian, Robert & Steve</h5>
 					</div>
 				</div>
@@ -80,7 +80,7 @@
 				if (isset($_SESSION['username'])) {
 					if (!empty($_POST['newPassword'])){
 						include('include/database.php');
-						$conn = new database('127.0.0.1', 'elevator', 'root', '');
+						$conn = new database('192.168.0.200', 'elevator', 'root', '3Yn4$zT&');
 						$conn->dbConnect();
 
 						$username = $_SESSION['username'];

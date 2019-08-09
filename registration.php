@@ -10,7 +10,7 @@
 	
 	<!-- Link Custom CSS -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="../css/Registration_style.css">
+    <link rel="stylesheet" type="text/css" href="css/Registration_style.css">
 	
 	<!-- Link JS -->
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -36,7 +36,7 @@
 				<div class="col-md-12">
 					<div class="page-header">
 						<br>
-						<h1 class="text-light"><img src="../Images/CC_logo.jpg" alt="Conestoga College Logo" height="60" wide="60"> Engineering Project 6</h1>
+						<h1 class="text-light"><img src="images/CC_logo.jpg" alt="Conestoga College Logo" height="60" wide="60"> Engineering Project 6</h1>
 						<h5 class="text-light">By: Thomas, Damian, Robert & Steve</h5>
 					</div>
 				</div>
@@ -105,7 +105,7 @@
             <textarea id="message">Don't be shy ... </textarea><br />
             <p id="charactersleft"></p>
             <p id="maxchar"></p>
-            <script src="../js/RegistrationPage.js"></script>
+            <script src="js/RegistrationPage.js"></script>
             <input class="submit"type="submit" value="Submit Request" />
         </form>
         </div>
@@ -145,7 +145,7 @@
 						<div class="col-md-12">
 							<div class="container-bg">
                             <footer class="text-light text-center" id='foot'></footer>
-							<script src="../js/DateObjectModel.js"></script>
+							<script src="js/DateObjectModel.js"></script>
                             </div>
                         </div>
                      </div>

@@ -34,7 +34,7 @@
 				<div class="col-md-12">
 					<div class="page-header">
 						<br>
-						<h1 class="text-light"><img src="../Images/CC_logo.jpg" alt="Conestoga College Logo" height="60" wide="60"> Engineering Project 6</h1>
+						<h1 class="text-light"><img src="Images/CC_logo.jpg" alt="Conestoga College Logo" height="60" wide="60"> Engineering Project 6</h1>
 						<h5 class="text-light">By: Thomas, Damian, Robert & Steve</h5>
 					</div>
 				</div>
@@ -61,14 +61,14 @@
 							<br>
 							
 							<figure>
-							<img src="../Images/damian.jpg" alt="image of Damian"	title="Damian" width="200" />
+							<img src="Images/damian.jpg" alt="image of Damian"	title="Damian" width="200" />
 								<figcaption><b>Damian Scarpone:</b>Specialist in botchery.
 								Damians key role in the project is to be a motivational leader
 								and rule with an iron fist!
 								</figcaption>
 							</figure>
 							<p id='info'></p>
-							<script src="../js/AgeObjectModel.js"></script>
+							<script src="js/AgeObjectModel.js"></script>
 							
 							<br>
 							
@@ -145,7 +145,7 @@
 						<div class="col-md-12">
 							<div class="container-bg">
 							<footer class="text-light text-center" id='foot0'></footer>
-							<script src="../js/DateObjectModel.js"></script>
+							<script src="js/DateObjectModel.js"></script>
 							</div>
 						</div>			
 					</div>

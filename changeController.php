@@ -1,6 +1,6 @@
 <?php
 
-	include 'php/database.php';
+	include 'include/database.php';
 	
 	session_start();
 

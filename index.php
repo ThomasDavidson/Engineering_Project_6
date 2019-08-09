@@ -96,7 +96,7 @@
 
 					<!-- Have a Table that wraps --> 
 						<?php 
-						include('php/chart.php');
+						include('include/chart.php');
 						?>
 						
 						</DIV>
@@ -123,7 +123,7 @@
 						<!-- Load links.php -->
 						
 									<?php 
-									include('php/links.php');
+									include('include/links.php');
 									?>
 						
 								</div>

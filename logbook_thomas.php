@@ -32,7 +32,7 @@
 				<div class="col-md-12">
 					<div class="page-header">
 						<br>
-						<h1 class="text-light"><img src="../Images/CC_logo.jpg" alt="Conestoga College Logo" height="60" wide="60"> Engineering Project 6</h1>
+						<h1 class="text-light"><img src="Images/CC_logo.jpg" alt="Conestoga College Logo" height="60" wide="60"> Engineering Project 6</h1>
 						<h5 class="text-light">By: Thomas, Damien, Robert & Steve</h5>
 					</div>
 					</div>
@@ -124,7 +124,7 @@
 							<!-- Footer Code with start year -->
 							
 							<footer class="text-light text-center" id='foot'></footer>
-							<script src="../js/DateObjectModelT.js"></script>
+							<script src="js/DateObjectModelT.js"></script>
 							
 							</div>
 						</div>			

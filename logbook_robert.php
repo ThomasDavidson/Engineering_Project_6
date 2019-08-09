@@ -29,7 +29,7 @@
 					<div class="page-header">
 						<br>
 						<a href ="https://www.conestogac.on.ca/" >
-						<h1 class="text-light"><img src="../Images/CC_logo.jpg" alt="Conestoga College Logo" height="60" wide="60"> Engineering Project 6</h1>
+						<h1 class="text-light"><img src="Images/CC_logo.jpg" alt="Conestoga College Logo" height="60" wide="60"> Engineering Project 6</h1>
 							</a>
 					</div>
 					</div>
@@ -56,7 +56,7 @@
 							<br>
 							
 							<figure>
-							<img src="../Images/Robert.jpg" alt="image of Robert"	title="Robert" width="200px" />
+							<img src="Images/Robert.jpg" alt="image of Robert"	title="Robert" width="200px" />
 							</figure>
 							
 							<br>
@@ -129,7 +129,7 @@
 							<div class="container-bg">
 							<!-- Footer Code with start year -->
 							<footer class="text-light text-center" id='foot'></footer>
-							<script src="../js/DateObjectModelR.js"></script>
+							<script src="js/DateObjectModelR.js"></script>
 							</div>
 						</div>			
 						</div>
