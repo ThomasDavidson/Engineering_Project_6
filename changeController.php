@@ -13,7 +13,7 @@
 	$changeFloorNumber = $_SESSION['floorNumber'];
 
 	try { 
-		echo"<p>Going to<p>" $_SESSION['floorNumber'] ;
+		echo"<p>Going to <p>" $changeFloorNumber ;
 		
 		// Begin a transaction
 		$conn->db->beginTransaction();
