@@ -86,6 +86,46 @@
 							<ul>
 								<li>Software Engineering Assignment #1</li>
 							</ul>
+							<h2>Week 6</h2>
+							<ul>
+								<li>Worked on CSS</li>
+							</ul>
+							<h2>Week 7</h2>
+							<ul>
+								<li>Members.php</li>
+							</ul>
+							<h2>Week 8</h2>
+							<ul>
+								<li>Updated members.php with </li>
+							</ul>
+							<h2>Week 9</h2>
+							<ul>
+								<li>Started integrating mysql with php</li>
+								<li>Reading elevatorNetwork from MYSQL</li>
+							</ul>
+							<h2>Week 10</h2>
+							<ul>
+								<li>Updated login with MYSQL</li>
+							</ul>
+							<h2>Week 11</h2>
+							<ul>
+								<li>Updated elevatorNetwork medification from website</li>
+							</ul>
+							<h2>Week 12</h2>
+							<ul>
+								<li>Updated menu bar</li>
+							</ul>
+							<h2>Week 13</h2>
+							<ul>
+								<li>Controbuted to change password page</li>
+								<li>Added change user page</li>
+
+							</ul>
+							<h2>Week 14</h2>
+							<ul>
+								<li>Integrated SQL connector to website</li>
+							</ul>
+
 							
 						</div>
 						

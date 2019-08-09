@@ -113,7 +113,7 @@
 			
 			// check the floor
 			try { 
-				getRequestedFloor
+				getRequestedFloor;
 			}
 			
             $conn->db->beginTransaction();
