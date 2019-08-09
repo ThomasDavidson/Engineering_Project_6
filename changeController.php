@@ -7,7 +7,7 @@
 	$conn->dbConnect();
 	
 	// user floor number
-	$changeFloorUser = $_SESSION['floorNumber'];
+	$changeFloorNumber = $_SESSION['floorNumber'];
 
 	try { 
 	
@@ -15,8 +15,7 @@
 		$conn->db->beginTransaction();
 		
 	    // prepare query 
-		$query = 'UPDATE elevatorNetwork SET currentFloor = :changeFloorUser
-				  WHERE nodeID = 1';
+		$query = 'UPDATE elevatorNetwork SET currentFloor = :changeFloorNumber';
 		
 		// run query 
 		$statement = $conn->db->prepare($query);
