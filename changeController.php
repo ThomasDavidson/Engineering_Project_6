@@ -9,14 +9,15 @@
 	// user floor number
 	$changeFloorNumber = $_SESSION['floorNumber'];
 
+
 	try { 
-	
+		echo"<p>Going to</p>" $_POST[changeFloorNumber] ; 
+		
 		// Begin a transaction
 		$conn->db->beginTransaction();
 		
 	    // prepare query 
-		$query = 'UPDATE elevatorNetwork SET currentFloor = :changeFloorNumber
-				  WHERE nodeID = 1';
+		$query = 'UPDATE elevatorNetwork SET currentFloor = :changeFloorNumber';
 		
 		// run query 
 		$statement = $conn->db->prepare($query);
