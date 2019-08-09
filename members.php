@@ -78,25 +78,23 @@
                 if (isset($_SESSION['username'])) {
                     echo "<h2>Input new data to the database using the form below</h2>
                     <form action=\"members.php\" method=\"post\" id=\"form\">
-                        Status: <input type=\"text\" name=\"status\" id=\"inputStatus\"> <br />
                         Requested Floor: <input type=\"text\" name=\"requestedFloor\" id=\"inputRequestedFloor\"> <br />
                         <input type=\"submit\" value=\"Add to Database\"  id=\"submit\" disabled=true>
                     </form>";
 
-                    if (!empty($_POST['status']) && !empty($_POST['requestedFloor'])) {
+                    if (!empty($_POST['requestedFloor'])) {
                         $conn->db->beginTransaction();
                         try {
                             $query = "SELECT (floorNumber) FROM carNode";
                             $currentFloor = $conn->db->query($query)->fetch()['floorNumber'];
 
-                            $query = 'INSERT INTO elevatorNetwork (date, time, status, currentFloor, requestedFloor, otherInfo)
-                            VALUES(:date,:time,:status,:currentFloor,:requestedFloor,:otherInfo)';
+                            $query = 'INSERT INTO elevatorNetwork (date, time, currentFloor, requestedFloor, otherInfo)
+                            VALUES(:date,:time,:currentFloor,:requestedFloor,:otherInfo)';
                             $statment = $conn->db->prepare($query);
                             $curr_date_query = $conn->db->query('SELECT CURRENT_DATE()');
                             $curr_date = $curr_date_query->fetch(PDO::FETCH_ASSOC);
                             $curr_time_query = $conn->db->query('SELECT CURRENT_TIME()');
                             $curr_time = $curr_time_query->fetch(PDO::FETCH_ASSOC);
-                            $status = $_POST['status'];
                             $requestedFloor = $_POST['requestedFloor'];
 
                             $conn->db->exec("UPDATE carNode SET floorNumber = '$requestedFloor'");
@@ -104,10 +102,9 @@
                             $params = [
                                 'date' => $curr_date['CURRENT_DATE()'],
                                 'time' => $curr_time['CURRENT_TIME()'],
-                                'status' => $status,
                                 'currentFloor' => $currentFloor,
                                 'requestedFloor' => $requestedFloor,
-                                'otherInfo' => 'na'
+                                'otherInfo' => 'Website'
                             ];
 
                             if (!$statment->execute($params)) {
@@ -129,19 +126,19 @@
 
                 <?php
 
-                $query = "SELECT floorNu    mber FROM carNode";
+                $query = "SELECT floorNumber FROM carNode";
                 $currentFloor = $conn->db->query($query)->fetch()['floorNumber'];
                 echo "<h2>The car is now on floor: $currentFloor</h2>";
 
 
-                $query = "SELECT t1.nodeID, t1.info, t1.status, t2.floorNumber FROM elevatorNodes t1 LEFT JOIN carNode t2 ON t1.nodeID = t2.nodeID";
+                $query = "SELECT t1.nodeID, t1.info, t2.floorNumber FROM elevatorNodes t1 LEFT JOIN carNode t2 ON t1.nodeID = t2.nodeID";
 
                 $infoRows = $conn->db->query($query);
 
                 echo "<h3>Elevator Info<h3>";
                 echo '<table style="border: 1px solid black;>"';
 
-                echo '<tr> <td style="border: 1px solid black;>"> nodeID </td> <td style="border: 1px solid black;>"> info </td> <td style="border: 1px solid black;>"> status </td> <td style="border: 1px solid black;>"> floorNumber </td> </tr>';
+                echo '<tr> <td style="border: 1px solid black;>"> nodeID </td> <td style="border: 1px solid black;>"> info </td> <td style="border: 1px solid black;>"> floorNumber </td> </tr>';
 
                 foreach ($infoRows as $row) {
                     echo '<tr>';
@@ -157,7 +154,7 @@
 
                 echo "<h2>Elevator Request History<h2>";
                 echo '<table style="border: 1px solid black;>"';
-                echo '<tr> <td style="border: 1px solid black;>"> date </td> <td style="border: 1px solid black;>"> time </td> <td style="border: 1px solid black;>"> requestID </td> <td style="border: 1px solid black;>"> status </td> <td style="border: 1px solid black;>"> currentFloor </td><td style="border: 1px solid black;>"> requestedFloor </td> <td style="border: 1px solid black;>"> otherInfo </td>  </tr>';
+                echo '<tr> <td style="border: 1px solid black;>"> date </td> <td style="border: 1px solid black;>"> time </td> <td style="border: 1px solid black;>"> requestID </td> <td style="border: 1px solid black;>"> currentFloor </td><td style="border: 1px solid black;>"> requestedFloor </td> <td style="border: 1px solid black;>"> Source </td>  </tr>';
 
 
                 if (isset($_SESSION['username'])) {

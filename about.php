@@ -55,7 +55,7 @@
         <!-- Main Section --> 
             <div class="col-md-10" style='background-color: white'>	
             <h1>About us</h1>
-            <img src="../images/team photo.jpg" alt= "team photo">
+            <img src="Images/team_photo.jpg" alt= "team photo">
             <div>Our group consists of 4 members: Robert, Damian, Stephan and Thomas. Our mascot is Haron and our website features him.</div>
  
             <div>Bellow is a map of our school </div>
