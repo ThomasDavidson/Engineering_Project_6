@@ -16,7 +16,8 @@
 		$conn->db->beginTransaction();
 		
 	    // prepare query 
-		$query = 'UPDATE elevatorNetwork SET currentFloor = :changeFloorNumber';
+		$query = 'INSERT INTO elevatorNetwork (currentFloor)
+					VALUES(:changeFloorNumber)';
 		
 		// run query 
 		$statement = $conn->db->prepare($query);
