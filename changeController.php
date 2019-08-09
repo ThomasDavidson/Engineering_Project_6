@@ -11,7 +11,6 @@
 
 
 	try { 
-		echo"<p>Going to</p>" $_POST[changeFloorNumber] ; 
 		
 		// Begin a transaction
 		$conn->db->beginTransaction();
