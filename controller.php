@@ -10,7 +10,7 @@
 	<?php
 	
 	// connect to db
-	include 'php/database.php';
+	include 'include/database.php';
 	
 
 	$conn = new database('127.0.0.1', 'elevator', 'ese', 'ese');
