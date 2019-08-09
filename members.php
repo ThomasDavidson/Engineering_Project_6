@@ -79,7 +79,7 @@
                     echo "<h2>Input new data to the database using the form below</h2>
                     <form action=\"members.php\" method=\"post\" id=\"form\">
                         Status: <input type=\"text\" name=\"status\" id=\"inputStatus\"> <br />
-                        Requested Floor: <input type=\"number\"name=\"requestedFloor\"min="1" max="3"\" id=\"inputRequestedFloor\"> <br />
+                        Requested Floor: <input type=\"number\"name=\"requestedFloor\"min="1"\"max="3"\" id=\"inputRequestedFloor\"> <br />
                         <input type=\"submit\" value=\"Add to Database\"  id=\"submit\">
                     </form>";
 
