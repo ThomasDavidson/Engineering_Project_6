@@ -8,7 +8,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">  
 	
 	<!-- Link Custom CSS -->
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
 	
 	<!-- Link JS -->
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -46,7 +46,7 @@
 
 			<!-- Load the Navigation Bar wit hPHP include function --> 
 					<?php 
-					include('include/menu.php');
+					include('menu.php');
 					?>
 						
 				</div>
@@ -96,6 +96,8 @@
 	<br />
 
     <?php
+	include 'exceptions.php'; 
+	
     if (isset($_SESSION['username'])) {
 		
         echo "<h2>Input new data to the database using the form below</h2>
@@ -108,6 +110,11 @@
         </form>";
         
 		if (!empty($_POST['status']) && !empty($_POST['currentFloor']) && !empty($_POST['requestedFloor'])) {
+			
+			// check the floor
+			try { 
+				getRequestedFloor
+			}
 			
             $conn->db->beginTransaction();
             
@@ -140,7 +147,7 @@
             $conn->db->rollBack();
         }
 			
-			// Copy the NodeID, Status, Requested Floor into elevatorLog
+			// Copy the NodeID, Status, Requested Floor into elevatorLog using LEFT JOIN
 			
 		    $conn->db->beginTransaction();
 			
@@ -188,6 +195,8 @@
 	?>
 	
 	<br />
+
+
 	
 	<?php
 	echo"<h2>Diagnostic Information<h2>";

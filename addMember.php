@@ -94,7 +94,7 @@
 						// Try updating password
 						try{ 
 							
-							echo "Changing Password for User:, " . $_SESSION['username'] . "!<br /b>";
+							echo "Add User to Database:, " . $_SESSION['username'] . "!<br /b>";
 					
 							// Find the username
 							$query = $conn->db->prepare('SELECT * FROM authorizedUsers WHERE username = :username');
@@ -144,7 +144,8 @@
 						}
 					}
 				}else {
-					print("<p>You need to be logged in<p>");
+					header("Location: index.php");
+					die();
 				}
 				?>
 

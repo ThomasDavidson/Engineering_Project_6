@@ -1,7 +1,8 @@
 <?php
 	
 	// connect to MySQL server
-	
+	//checks login
+if (isset($_SESSION['username'])) {
 	include 'database.php';
 	
 	$conn = new database('127.0.0.1', 'elevator', 'root', '');
@@ -41,5 +42,5 @@
 	  echo "Username Taken";
 	  
 	}
-
+}
 ?>
