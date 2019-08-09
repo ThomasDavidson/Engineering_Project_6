@@ -6,9 +6,7 @@
     </head>
 	
     <body>
-     
-  
-	
+ 	
 	<?php
 	
 	// connect to db
@@ -43,7 +41,7 @@
     <p>Enter a floor number to send the elevator to </p>
         <input type="number" name="floorNumber" min="1" max="3"/>
         <input type="submit" value="Send It"/>
-	
+	</form>
 
 </body>
     
