@@ -80,7 +80,7 @@
 				if (isset($_SESSION['username'])) {
 					if (!empty($_POST['newPassword'])){
 						include('include/database.php');
-						$conn = new database('127.0.0.1', 'elevator', 'root', '');
+						$conn = new database('192.168.0.200', 'elevator', 'root', '3Yn4$zT&');
 						$conn->dbConnect();
 
 						$username = $_SESSION['username'];

@@ -69,7 +69,7 @@
 			echo "<p>Password: $password</p>";
 			if ($username && $password) {
 				//connects to database
-				$conn = new database('127.0.0.1', 'elevator', 'root', '');
+				$conn = new database('192.168.0.200', 'elevator', 'root', '3Yn4$zT&');
 				$conn->dbConnect();
 				$query = "SELECT * FROM authorizedUsers WHERE username='$username' AND password='$password'";
 				$rows = $conn->db->query($query);

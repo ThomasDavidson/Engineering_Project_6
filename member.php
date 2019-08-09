@@ -65,7 +65,7 @@
 	
     if (isset($_SESSION['username'])) {
         echo "Welcome, " . $_SESSION['username'] . "!<br /b>";
-		$conn = new database('127.0.0.1', 'elevator', 'root', '');
+		$conn = new database('192.168.0.200', 'elevator', 'root', '3Yn4$zT&');
         $conn->dbConnect();
 		
     } else {
