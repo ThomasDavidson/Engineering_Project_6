@@ -14,7 +14,7 @@
 	
 	session_start();
 
-	$conn = new database('192.168.0.200', 'elevator', 'root', '3Yn4$zT&');
+	$conn = new database('192.168.0.200', 'elevator', 'ese', 'ese');
 	
 	$conn->dbConnect();
 
