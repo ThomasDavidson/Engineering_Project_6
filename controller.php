@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 
 	<?php
 	// connect to db
@@ -12,6 +11,7 @@
     $current = $db->query("Select floorNumber FROM carNode");
     echo "The car is now on floor: ".$_POST["floor"];
     echo "<br />";
+	
 	?>
 	
     <form action= "changeController.php" method="post" id="floor"> 
