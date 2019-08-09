@@ -1,32 +1,37 @@
 <?php
 
+	include 'php/database.php';
+	
+	//connects to db
+	$conn = new database('192.168.0.200', 'elevator', 'root', '3Yn4$zT&');
+	$conn->dbConnect();
+	
+	// user floor number
 	$changeFloorUser = $_SESSION['floorNumber'];
 
-//connects to db
-    $db = new PDO(
-        'mysql:host=192.168.0.200; dbname=elevator',  //data source
-        'ese',                 //username
-        'ese'                 //paseword
-    );
+	try { 
+	
+		// Begin a transaction
+		$conn->db->beginTransaction();
+		
+	    // prepare query 
+		$query = 'UPDATE elevatorNetwork SET currentFloor = :changeFloorUser
+				  WHERE nodeID = 1';
+		
+		// run query 
+		$statement = $conn->db->prepare($query);
+					
+	
+		echo"<p>Successfully changed floor number</p>";
 
-   // $db->querry("UPDATE carNode SET floorNumber ='$_POST["floor"]' WHERE nodeID ='1'");
-
-
-    $current = $db->query("Select floorNumber FROM carNode");
-    echo "The car is now on floor: ".$_POST["floor"];
-    echo "<br />";
-    echo "<h3>Database Contents</h3>";
-    echo "<h4>Node ID--|-------Info--------------|--Status---|--Floor Number</h4>";
-   // $db->query(Select elevatorNodes.nodeID, carNodes.nodeID FROM elevatorNodes LEFT JOIN)
-    $rows = $db->query('Select * FROM elevatorNodes ORDER BY nodeID');
-    foreach ($rows as $row) { 
-        for($i=0;$i <sizeof($row)/2; $i++){
-            echo "------";
-            echo $row[$i] . "-----| ";
-            
-        }
-        echo "<br />";
-        }
+	}
+	
+	// Recognize mistake and roll back changes
+	catch (Exception $e){
+		echo"<p>Failed to change floor number</p>";
+		
+		$conn->db->rollBack();
+	}
 
 
  ?>
