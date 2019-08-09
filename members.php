@@ -78,8 +78,8 @@
                 if (isset($_SESSION['username'])) {
                     echo "<h2>Input new data to the database using the form below</h2>
                     <form action=\"members.php\" method=\"post\" id=\"form\">
-                        Requested Floor: <input type=\"number\" name=\"requestedFloor\"\min="1" max="3\  id=\"inputRequestedFloor\"> <br />
-                        <input type=\"submit\" value=\"Add to Database\"  id=\"submit\" disabled=true>
+                        Requested Floor: <input type=\"number\"name=\"requestedFloor\"\min="1" max="3\  id=\"inputRequestedFloor\"> <br />
+                        <input type=\"submit\" value=\"Add to Database\"  id=\"submit\">
                     </form>";
 
                     if (!empty($_POST['requestedFloor'])) {
@@ -204,7 +204,7 @@
 
 
 
-                <script src="js/memberInput.js"></script>
+                <!-- <script src="js/memberInput.js"></script> -->
 
             </div>
 
