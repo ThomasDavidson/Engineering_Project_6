@@ -12,27 +12,19 @@
 	// connect to db
 	include 'php/database.php';
 	
-	session_start();
 
 	$conn = new database('127.0.0.1', 'elevator', 'ese', 'ese');
 	
 	$conn->dbConnect();
 
 	// tell user what floor it's on 
-	if (isset($_SESSION['username'])) { 
 	
-		$current = $conn->db->query("Select currentFloor FROM elevatorNetwork WHERE nodeID = 1");
+		$current = $conn->db->query("SELECT currentFloor FROM elevatorNetwork WHERE nodeID = 1");
 		
 		echo "The car is now on floor: ".$_POST["current"];
 		
 		echo "<br />";
 		
-	}
-	
-	else { 
-	
-		echo "Username Not Found";
-	
 	}
 	
 	?>
