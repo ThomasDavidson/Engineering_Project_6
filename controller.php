@@ -6,14 +6,49 @@
     </head>
 	
     <body>
+    <!-- Container has margins but container-fluid does not -->
+	<div class="container-fluid">
+		<div class="container-bg">
 
+		<!-- Top of the Page --> 
+			<div class="row" >
+			
+		<!-- Container-bg to set background color --> 
+				<div class="col-md-12">
+					<div class="page-header">
+						<br>
+						<h1 class="text-light"><img src="../Images/CC_logo.jpg" alt="Conestoga College Logo" height="60" wide="60"> Engineering Project 6</h1>
+						<h5 class="text-light">By: Thomas, Damian, Robert & Steve</h5>
+					</div>
+				</div>
+			</div>
+			<br>
+			
+			<div class="row">
+				<div class="col-md-12">	
+
+			<!-- Load the Navigation Bar wit hPHP include function --> 
+					<?php 
+					include('menu.php');
+					?>
+						
+				</div>
+            </div> 
+            
+    <!-- Main Section --> 
+	<div class="col-md-12" style='background-color: white'>	
+
+     <h1 class="text-muted">Members Only Page</h1>
+	
+	<div>
+	
 	<?php
 	// connect to db
 	include 'php/database.php';
 	
 	session_start();
 
-	$conn = new database('192.168.0.200', 'elevator', 'ese', 'ese');
+	$conn = new database('192.168.0.200', 'elevator', 'root', '3Yn4$zT&');
 	$conn->dbConnect();
 
 	// tell user what floor it's on 
