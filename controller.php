@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-	<? php
+	<?php
 	// connect to db
 	include 'php/database.php';
 	
