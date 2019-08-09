@@ -92,8 +92,68 @@
 							
 							<h2>Week 5</h2>
 							<ul>
-								<li> In Progress</li>
+								<li> started phase 2</li>
+								<li> Started using db </li>
 							</ul>
+
+
+							<h2>Week 6</h2>
+							<ul>
+								<li> started studying php</li>
+								<li> Worked on setting up db</li>
+							</ul>
+
+							<h2>Week 7</h2>
+							<ul>
+								<li> connected the pi vnc vierwer</li>
+								<li> started devolping git scrips</li>
+							</ul>
+
+							<h2>Week 7</h2>
+							<ul>
+								<li> connected the pi vnc vierwer</li>
+								<li> started devolping git scrips</li>
+							</ul>
+
+							<h2>Week 8</h2>
+							<ul>
+								<li>Assisted on php menu integration</li>
+								<li> worked on devolping git scrips</li>
+							</ul>
+
+							<h2>Week 8</h2>
+							<ul>
+								<li>Assisted on php menu integration</li>
+								<li>Worked on html, pages</li>
+								<li> worked on devolping git scrips</li>
+							</ul>
+
+							<h2>Week 9-10</h2>
+							<ul>
+								<li>Pretty much nothin project related</li>
+							</ul>
+
+							<h2>Week 11</h2>
+							<ul>
+								<li>worked on login pages, setting up php</li>
+							</ul>
+						
+							<h2>Week 12</h2>
+							<ul>
+								<li>finished forms, started db integration</li>
+							</ul>
+
+							
+							<h2>Week 13</h2>
+							<ul>
+								<li>finished forms, started db integration</li>
+							</ul>
+						
+							<h2>Week 14</h2>
+							<ul>
+								<li>Finshed website</li>
+							</ul>
+						
 							<a class="top-link" href="logbook_robert.php">Top of Page</a>
 						
 						</div>
