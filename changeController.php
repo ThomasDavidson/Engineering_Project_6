@@ -10,7 +10,7 @@
 	$conn->dbConnect();
 	
 	// user floor number
-	$changeFloorNumber = $_SESSION['floorNumber'];
+	$changeFloorNumber = $_post['floorNumber'];
 
 	try { 	
 		// Begin a transaction
